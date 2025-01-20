@@ -1,0 +1,11 @@
+body {
+  background: url("../assets/background.png") repeat;
+  background-size: 90%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+}

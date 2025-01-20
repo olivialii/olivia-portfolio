@@ -1,0 +1,38 @@
+@import "../../vars.css";
+
+.container {
+    color: var(--color-text);
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 175px;
+    min-width: 300px;
+    z-index: 1;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.title {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 75px;
+}
+
+.desc {
+    color: gray;
+    max-width: 413px;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.viewBtn {
+    text-decoration: none;
+    background-color: var(--color-box);
+    color: var(--color-text);
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 16px 20px;
+    box-shadow: var(--shadow);
+}

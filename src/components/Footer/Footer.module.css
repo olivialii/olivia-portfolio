@@ -1,0 +1,23 @@
+@import "../../vars.css";
+
+.Footer {
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content:flex-end;
+    z-index: 2;
+    margin: 0 5%;
+    padding-bottom: 30px;
+}
+
+.Socials {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+}
+
+.Socials a {
+    font-weight: 400;
+    color: var(--color-text);
+    text-decoration: none;
+}
