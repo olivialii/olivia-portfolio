@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from "./Intro.module.css";
 
@@ -12,7 +13,7 @@ export const Intro = () => {
                     front-end dev, prototyping, and working on fun, 
                     impactful, community-centered projects ♡
                 </p>
-                <a href = "" className ={styles.viewBtn}>VIEW MY WORK →</a>
+                <Link to="/projects"> <a className ={styles.viewBtn}> VIEW MY WORK →</a></Link>
             </div>
         </section>
     );

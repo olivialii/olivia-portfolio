@@ -5,15 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 40px;
     z-index: 2;
     margin: 0 5%;
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
-    text-decoration: none;
     color: var(--color-text);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -29,10 +28,9 @@
 }
 
 .menuItems a {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: var(--color-text);
-    text-decoration: none;
 }
 
 .menuBtn {
@@ -50,7 +48,7 @@
         right: 0;
         flex-direction: column;
         align-items: flex-end;
-        gap: 11px;
+        gap: 5px;
         z-index: 3;
     }
 
@@ -68,7 +66,7 @@
         gap: 13px;
         border-radius: 10px;
         background: var(--color-box);
-        padding: 24px 33px;
+        padding: 20px 30px;
     }
 
     .menuOpen {

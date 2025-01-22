@@ -1,23 +1,39 @@
 @import "../../vars.css";
 
 .Footer {
-    font-size: 20px;
+    color: var(--color-text);
+    font-size: 15px;
     position: relative;
     display: flex;
-    justify-content:flex-end;
     z-index: 2;
-    margin: 0 5%;
-    padding-bottom: 30px;
+    padding: 40px 100px;
+    justify-content: space-between;
 }
 
 .Socials {
+    align-items: center;
+    margin-right: -20;
     display: flex;
     gap: 45px;
     list-style: none;
 }
 
 .Socials a {
-    font-weight: 400;
     color: var(--color-text);
-    text-decoration: none;
+    font-weight: 400;
+}
+
+.Name {
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 650px) {
+    .Footer, .Socials {
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Footer {
+        padding: 40px 60px;
+    }
 }
