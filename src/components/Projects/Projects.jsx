@@ -12,13 +12,13 @@ export const Projects = () => {
       </Container>
 
       <Container 
-        title= "UX Designer @ SearchNEU" 
-        desc= "Enhancing student lives through mobile redesigns that simplify the Northeastern's registration process">
+        title= "MBTA Case Study" 
+        desc= "Creating a more intuitive app for navigating Boston's public transportation system">
       </Container>
 
       <Container 
-        title= "UX Designer @ SearchNEU" 
-        desc= "Enhancing student lives through mobile redesigns that simplify the Northeastern's registration process">
+        title= "Research Assistant @ DAILP" 
+        desc= "Designing new features for an Indigenous digital language interface based on community needs">
       </Container>
     </div>
   );

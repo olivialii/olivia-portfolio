@@ -1,8 +1,11 @@
 @import "../../vars.css";
 
 .container {
-    max-height: 626px;
+    width: 100%;
+    height: 100%;
+    
     max-width: 960px;
+    min-width: fit-content;
     background: white;
     align-self: center;
 
@@ -24,8 +27,6 @@
 }
 
 h1 {
-    width: 100%;
-    height: auto;
     font-size: 28px;
 }
 
