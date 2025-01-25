@@ -1,0 +1,39 @@
+@import "../../vars.css";
+
+.container {
+    max-height: 626px;
+    max-width: 960px;
+    background: white;
+    align-self: center;
+
+    margin-bottom: 60px;
+
+    border-radius: 28px;
+    border: 1.5px solid #d7d7d7;
+
+    transition: 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    border: 1.5px solid #989898;
+}
+
+.items {
+    padding: 43px;
+}
+
+h1 {
+    width: 100%;
+    height: auto;
+    font-size: 28px;
+}
+
+p {
+    font-size: 19px;
+}
+
+.img {
+    height: 345px;
+    width: auto;
+}
