@@ -1,27 +1,25 @@
 import React from 'react';
 
 import styles from "./Projects.module.css";
+import Container from '../Container/Container';
 
-
-
-const Projects = () => {
+export const Projects = () => {
   return (
     <div className={styles.Projects}>
-      <div className={styles.container}>
-          <div className={styles.fadingout}>
-            <div className={styles.imageBox}> 
-              
-            </div>
-          </div>
-          <div className={styles.fadingout}></div>
-      </div>
+      <Container 
+        title= "UX Designer @ SearchNEU" 
+        desc= "Enhancing student lives through mobile redesigns that simplify the Northeastern's registration process">
+      </Container>
 
-      <div className={styles.container}>
-          <div className={styles.fadingout}></div>
-          <div className={styles.fadingout}></div>
-      </div>
+      <Container 
+        title= "UX Designer @ SearchNEU" 
+        desc= "Enhancing student lives through mobile redesigns that simplify the Northeastern's registration process">
+      </Container>
+
+      <Container 
+        title= "UX Designer @ SearchNEU" 
+        desc= "Enhancing student lives through mobile redesigns that simplify the Northeastern's registration process">
+      </Container>
     </div>
   );
 };
-
-export default Projects;

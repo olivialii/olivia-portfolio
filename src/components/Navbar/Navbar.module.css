@@ -5,16 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
+    padding: 44px;
     z-index: 2;
     margin: 0 5%;
 }
 
 .logo {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 32px;
     color: var(--color-text);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .menu {
@@ -39,6 +37,8 @@
 
 @media screen and (max-width: 650px) {
     .navbar {
+        padding-left: 20px;
+        
         flex-direction: column;
         align-items: flex-start;
     }
@@ -57,6 +57,7 @@
         width: 40px;
         display: block;
         cursor: pointer;
+        margin-right: 15px;
     }
 
     .menuItems {
