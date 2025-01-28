@@ -6,9 +6,11 @@
 
     color: var(--color-text);
     padding: 0 50px;
+    padding-bottom: 60px;
 
     display: flex;
     flex-direction: column;
+    gap: 60px;
 }
 
 

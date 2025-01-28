@@ -3,18 +3,17 @@
 .container {
     width: 100%;
     height: 100%;
-    
     max-width: 960px;
     min-width: fit-content;
-    background: white;
-    align-self: center;
 
-    margin-bottom: 60px;
+    background: white;
+    color: var(--color-text);
+    align-self: center;
 
     border-radius: 28px;
     border: 1.5px solid #d7d7d7;
-
     transition: 0.3s;
+    margin:auto;
 }
 
 .container:hover {
@@ -24,9 +23,11 @@
 
 .items {
     padding: 43px;
+
 }
 
 h1 {
+    padding-top: 15px;
     font-size: 28px;
 }
 
@@ -35,6 +36,13 @@ p {
 }
 
 .img {
-    height: 345px;
-    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    min-width: 200px;
 }

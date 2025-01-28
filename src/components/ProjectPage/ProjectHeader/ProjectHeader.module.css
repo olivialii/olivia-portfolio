@@ -1,0 +1,13 @@
+@import "../../../vars.css";
+
+.ProjectTitle {
+    color: #7D7D7D;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+h2 {
+    color: var(--color-text);
+    padding-left: 10px;
+}

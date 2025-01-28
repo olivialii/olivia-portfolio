@@ -3,12 +3,14 @@ import React from 'react';
 import styles from "./Projects.module.css";
 import Container from '../Container/Container';
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <div className={styles.Projects}>
       <Container 
         title= "UX Designer @ SearchNEU" 
-        desc= "Enhancing student lives through mobile redesigns that simplify the Northeastern's registration process">
+        desc= "Enhancing student lives through mobile redesigns that simplify the Northeastern's registration process"
+        img= "assets/searchPreview.png"
+        link="/ProjectPage">
       </Container>
 
       <Container 
@@ -23,3 +25,5 @@ export const Projects = () => {
     </div>
   );
 };
+
+export default Projects;

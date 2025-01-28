@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from "./Intro.module.css";
+import Projects from '../Projects/Projects';
 
 export const Intro = () => {
     return (
@@ -16,5 +17,6 @@ export const Intro = () => {
                 <Link to="/projects"> <a className ={styles.viewBtn}> VIEW MY WORK →</a></Link>
             </div>
         </section>
+
     );
 };
