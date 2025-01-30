@@ -1,0 +1,29 @@
+@import "../../../vars.css";
+
+.content {
+    max-width: 1200px;
+    padding: 0px 80px;
+    padding-right: 95px;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 14px;
+}
+
+.desc {
+    padding-bottom: 50px;
+    font-size: 20px;
+    color: var(--color-text-light);
+}
+
+.number {
+    padding-right: 18px;
+    color: #A0A0A0;
+}

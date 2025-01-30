@@ -29,12 +29,22 @@
 }
 
 .viewBtn {
-    background-color: var(--color-box);
     color: var(--color-text);
     border-radius: 20px;
     font-size: 18px;
     padding: 16px 20px;
-    box-shadow: var(--shadow);
     list-style: none;
     
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 0px 0px rgb(151, 151, 151);
+    border: 1.5px solid #6a6a6a;
+
+    transition: 0.3s;
 }
+
+.viewBtn:hover {
+    background: rgb(245, 245, 245);
+    box-shadow: 4px 4px 0px 0px rgb(151, 151, 151);
+    border: 1.5px solid #6a6a6a;
+}
+

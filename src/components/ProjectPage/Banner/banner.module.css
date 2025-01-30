@@ -1,0 +1,30 @@
+@import "../../../vars.css";
+
+.banner {
+    position: relative;
+    padding-bottom: 56px;
+}
+
+.bannerImage {
+    width: 100%;
+    height: auto;
+    max-height: 850px;
+    object-fit:cover;
+}
+
+.logo {
+    width: 3%;
+    padding-top: 4%;
+    position: absolute;
+
+    left: 3%;
+}
+
+.searchDog {
+    width: 28%;
+
+    padding-top: 20%;
+    position: absolute;
+  
+    right: 10vh;
+}

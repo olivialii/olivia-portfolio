@@ -7,7 +7,9 @@ import { Footer } from "./components/Footer/footer";
 import Projects from './components/Projects/Projects';
 import ProjectPage from './components/ProjectPage/ProjectPage';
 
+
 function App() {
+  
   return (
     <Router>
       <div>

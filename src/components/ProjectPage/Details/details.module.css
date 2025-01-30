@@ -1,0 +1,26 @@
+@import "../../../vars.css";
+
+.Details {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    gap: auto;
+    justify-content: space-between;
+    padding-left: 112px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+
+    font-size: 20px;
+    color: var(--color-text-light);
+}
+
+.column {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 160px;
+}
+
+.category {
+    font-size: 20px;
+}
