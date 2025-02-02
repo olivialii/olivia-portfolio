@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import styles from "./SearchNEU.module.css";
 //import Banner from './Banner/banner';
-import Subheader from "./Subheader/Subheader";
+import Subheader from "./Subheader/subheader";
 //import Details from "./Details/Details";
 import { Link } from 'react-router-dom';
 
