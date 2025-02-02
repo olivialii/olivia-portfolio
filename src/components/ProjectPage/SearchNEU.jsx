@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import styles from "./SearchNEU.module.css";
 import Banner from './Banner/banner';
 import Subheader from "./Subheader/Subheader";
-import Details from "./Details/Details";
+import Details from "./Details/details"
 import { Link } from 'react-router-dom';
 
 import { setWhiteBackground, defaultBackground } from '../../../utils/setBackground';

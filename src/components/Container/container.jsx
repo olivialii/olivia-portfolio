@@ -1,6 +1,6 @@
 //Project Container Component
 import React from 'react';
-import styles from "./Container.module.css";
+import styles from "./container.module.css";
 import { Link } from 'react-router-dom';
 
 const Container = ({title, desc, img, link}) => {

@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import styles from "./App.module.css";
 
-import { Navbar } from "./components/Navbar/Navbar";
+import { Navbar } from "./components/Navbar/navbar";
 import { Intro } from "./components/Intro/intro";
 import { Footer } from "./components/Footer/footer"; 
-import Projects from './components/Projects/Projects';
+import Projects from './components/Projects/projects';
 import SearchNEU from './components/ProjectPage/SearchNEU';
 import Mbta from './components/ProjectPage/mbta';
 

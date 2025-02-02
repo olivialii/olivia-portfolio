@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from "./Intro.module.css";
-import Projects from '../Projects/Projects';
+import styles from "./intro.module.css";
 
 export const Intro = () => {
     return (
