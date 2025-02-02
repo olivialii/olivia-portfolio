@@ -2,8 +2,7 @@
 
 .content {
     max-width: 1200px;
-    padding: 0px 80px;
-    padding-right: 95px;
+    padding: 10px 95px 50px 80px;
     margin: auto;
     
     display: flex;
@@ -14,11 +13,10 @@
 h2 {
     font-size: 24px;
     line-height: 28px;
-    padding-bottom: 14px;
+    padding-bottom: 20px;
 }
 
 .desc {
-    padding-bottom: 50px;
     font-size: 20px;
     color: var(--color-text-light);
 }
@@ -26,4 +24,10 @@ h2 {
 .number {
     padding-right: 18px;
     color: #A0A0A0;
+}
+
+@media screen and (max-width: 650px) {
+    .content {
+        padding: 10px 45px 50px 40px;
+    }
 }

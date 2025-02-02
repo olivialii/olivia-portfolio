@@ -5,7 +5,8 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Intro } from "./components/Intro/intro";
 import { Footer } from "./components/Footer/footer"; 
 import Projects from './components/Projects/Projects';
-import ProjectPage from './components/ProjectPage/ProjectPage';
+import SearchNEU from './components/ProjectPage/SearchNEU';
+import Mbta from './components/ProjectPage/mbta';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/Projects" element={<Projects />} />
-          <Route path='/ProjectPage' element={<ProjectPage/>} />
+          <Route path='/SearchNEU' element={<SearchNEU/>} />
+          <Route path='/mbta' element={<Mbta />} />
         </Routes>
         <Footer />
       </div>

@@ -10,12 +10,13 @@ const Projects = () => {
         title= "UX Designer @ SearchNEU" 
         desc= "Enhancing student lives through mobile redesigns that simplify the Northeastern's registration process"
         img= "assets/search/searchPreview.png"
-        link="/ProjectPage">
+        link="/SearchNEU">
       </Container>
 
       <Container 
         title= "MBTA Case Study" 
-        desc= "Creating a more intuitive app for navigating Boston's public transportation system">
+        desc= "Creating a more intuitive app for navigating Boston's public transportation system"
+        link="/Mbta">
       </Container>
 
       <Container 

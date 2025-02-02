@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./details.module.css";
 
-const Details = ({role, duration, team1, team2, team3, tools1, tools2}) => {
+const Details = ({role, duration, team, tools}) => {
 
     return (
         <div className={styles.Section}>
@@ -18,16 +18,13 @@ const Details = ({role, duration, team1, team2, team3, tools1, tools2}) => {
 
         <div className={styles.column}>
             <p className={styles.category}>Team</p>
-            <p> {team1} </p>
-            <p> {team2} </p>
-            <p> {team3} </p>
+            <p> {team} </p>
          
         </div>
 
         <div className={styles.column}>
             <p className={styles.category}>Tools</p>
-            <p> {tools1} </p>
-            <p> {tools2} </p>
+            <p> {tools} </p>
         </div>
 
       </div>

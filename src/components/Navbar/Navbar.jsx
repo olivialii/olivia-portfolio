@@ -7,7 +7,7 @@ import { getImageUrl } from '../../../utils';
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    
+
     return (
     <nav className = {styles.navbar}>
         <a className={styles.logo} href="/">
@@ -27,7 +27,7 @@ export const Navbar = () => {
                 className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
                 onClick={() => setMenuOpen(false)}
             >
-                <li><Link to="/projects">WORK</Link></li>
+                <li className={styles.work}><Link to="/projects">WORK</Link></li>
                 <li><Link to="/#play">PLAY</Link></li>
                 <li><Link to="/#about">ABOUT</Link></li>
             </u1>

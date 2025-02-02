@@ -1,26 +1,38 @@
 @import "../../../vars.css";
 
-.Details {
-    max-width: 1200px;
+.Section {
     display: flex;
-    flex-direction: row;
-    gap: auto;
-    justify-content: space-between;
-    padding-left: 112px;
-    padding-right: 100px;
-    padding-bottom: 50px;
+    justify-content: center;
+    padding: 0 95px;
 
+    margin: auto;
+    
+}
+
+.Details {
+    display: flex;
+    gap: 8vw;
+    flex-direction: row;
+    padding-bottom: 50px;
     font-size: 20px;
     color: var(--color-text-light);
 }
 
 .column {
-    width: auto;
+    padding: auto;
     display: flex;
     flex-direction: column;
-    max-width: 160px;
+    max-width: 180px;
 }
 
 .category {
-    font-size: 20px;
+    font-weight: 800;
+    color: var(--color-text);
 }
+
+@media screen and (max-width: 650px) {
+    .Details {
+        gap: 5vw;
+    }
+}
+
