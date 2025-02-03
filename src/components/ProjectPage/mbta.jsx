@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
+import { getImageUrl, setWhiteBackground, defaultBackground } from '../../utils';
 
 import styles from "./SearchNEU.module.css";
 //import Banner from './Banner/banner';
 import Subheader from "./Subheader/subheader";
 //import Details from "./Details/Details";
 import { Link } from 'react-router-dom';
-
-import { setWhiteBackground, defaultBackground } from '../../../utils/setBackground';
 
 
 const Mbta = () => {
