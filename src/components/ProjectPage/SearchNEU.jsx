@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { getImageUrl, setWhiteBackground, defaultBackground } from '../../utils';
+import { setWhiteBackground, defaultBackground } from '../../utils/';
 
 import styles from "./SearchNEU.module.css";
 import Banner from './Banner/banner';
@@ -31,7 +31,7 @@ const SearchNEU = () => {
       </Subheader>
 
       <Banner 
-        banner={getImageUrl('/search/searchBanner.png')}
+        banner='/assets/search/searchBanner.png'
         logo='/assets/search/sbLogo.png'
         other='/assets/search/searchDog.png'
       />
