@@ -33,9 +33,9 @@ const SearchNEU = () => {
       </Subheader>
 
       <Banner 
-        banner='/assets/search/searchBanner.png'
-        logo='/assets/search/sbLogo.png'
-        other='/assets/search/searchDog.png'
+        banner='/dist/assets/search/searchBanner.png'
+        logo='/dist/assets/search/sbLogo.png'
+        other='/dist/assets/search/searchDog.png'
       />
       
       <Subheader
@@ -84,7 +84,7 @@ const SearchNEU = () => {
           </ol>
           
           <div>
-          <img class={styles.phoneIMG} src='/assets/search/searchOG.png'></img>
+          <img class={styles.phoneIMG} src='/dist/assets/search/searchOG.png'></img>
           <p class={styles.imgDesc}>SearchNEU's current mobile site</p>
           </div>
         </div>
@@ -116,7 +116,7 @@ const SearchNEU = () => {
             What kind of course information are most important to students when comparing courses? Based on user research conducted by past designers, most students want to see the number of sections available, how many credits a course is worth, and the NUPath requirements that the course fulfills. 
             
             <div class={styles.imgLeft}>
-              <img class={styles.cards} src= "assets/search/cards.png"></img>
+              <img class={styles.cards} src= "/dist/assets/search/cards.png"></img>
               <div>
               We created multiple iterations in an attempt to determine the best format. One of our challenges was trying not to overload the card with too much dense information, and deciding whether or not some elements needed to be omitted to free up space.
               <br/><br/>
@@ -136,12 +136,12 @@ const SearchNEU = () => {
           Goal: what is the best way we can display filters?
             <br/><br/>
 
-            <img class={styles.fullLengthImg} src='/assets/search/filtersketch.png'></img>
+            <img class={styles.fullLengthImg} src='/dist/assets/search/filtersketch.png'></img>
             <p class={styles.imgDesc}>some ideation sketches</p>
 
             <br/><br/>
 
-            <img class={styles.fullLengthImg} src='/assets/search/3filters.png'></img>
+            <img class={styles.fullLengthImg} src='/dist/assets/search/3filters.png'></img>
             <p class={styles.imgDesc}>hi fi prototypes for testing</p>
 
             <br/><br/>
@@ -162,7 +162,7 @@ const SearchNEU = () => {
               </ul>
 
               <div>
-          <img class={styles.phoneIMG} src='/assets/search/filter.gif'></img>
+          <img class={styles.phoneIMG} src='/dist/assets/search/filter.gif'></img>
           <p class={styles.imgDesc}>Updated filter UI</p>
           </div>
 
@@ -178,8 +178,8 @@ const SearchNEU = () => {
         desc= { 
         <div className={styles.final}>
           <div>
-          <img className={styles.demo} src='assets/search/final.gif'></img>
-          <img className={styles.points} src='assets/search/finaldesc.png'></img>
+          <img className={styles.demo} src='/dist/assets/search/final.gif'></img>
+          <img className={styles.points} src='/dist/assets/search/finaldesc.png'></img>
           </div>
         </div>
         }>
@@ -207,7 +207,7 @@ const SearchNEU = () => {
         desc= {<p>After a very productive Fall Semester, I will be rejoining SearchNEU as a <span class={styles.bold}>Design Lead!</span>  My goal for the Spring 2025 semester will be to incorporate more community feedback and usability testing to ensure that new features improve user experience and align with Northeastern students’ goals and values. Our team will be working on implementing the new mobile designs and notification pages, incorporating a new FAQ page, and creating how-to modals. I will also be scoping out future design goals for SearchNEU. More to come!</p>}>
       </Subheader>
       
-      <img class={styles.dog} src="/assets/search/dog.png"></img>
+      <img class={styles.dog} src="/dist/assets/search/dog.png"></img>
 
 
 

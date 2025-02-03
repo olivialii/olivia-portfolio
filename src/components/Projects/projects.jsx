@@ -9,7 +9,7 @@ const Projects = () => {
       <Container 
         title= "UX Designer @ SearchNEU" 
         desc= "Enhancing student lives through mobile redesigns that simplify the Northeastern's registration process"
-        img= "assets/search/searchPreview.png"
+        img= "/dist/assets/search/searchPreview.png"
         link="/SearchNEU">
       </Container>
 
