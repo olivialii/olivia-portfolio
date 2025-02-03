@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { setWhiteBackground, defaultBackground } from '../../utils/';
+import { setWhiteBackground, defaultBackground } from '../../utils';
 
 import styles from "./SearchNEU.module.css";
 import Banner from './Banner/banner';
@@ -24,7 +24,7 @@ const SearchNEU = () => {
         {
         <div class={styles.ProjectTitle}>
           <Link class={styles.link} to={"/Projects"}> ⬅️ Work / </Link> 
-          <div> SearchNEU </div>
+          <h2> SearchNEU </h2>
         </div>
         }
         desc= {<div><a href="https://searchneu.com/NEU" target="#blank">SearchNEU</a> is a comprehensive tool that helps Northeastern students search for course information, simplifying the course registration process.</div>}>

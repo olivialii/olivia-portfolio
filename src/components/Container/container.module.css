@@ -27,14 +27,11 @@
 
 }
 
-h1 {
-    padding-top: 15px;
-    font-size: 28px;
+
+h2 {
+    color: var(--color-header);
 }
 
-p {
-    font-size: 19px;
-}
 
 .img {
     display: block;

@@ -1,9 +1,12 @@
 import React from 'react';
+import { defaultBackground } from '../../utils';
 
 import styles from "./projects.module.css";
 import Container from '../Container/container';
 
+
 const Projects = () => {
+  
   return (
     <div className={styles.Projects}>
       <Container 

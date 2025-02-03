@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer/footer";
 import Projects from './components/Projects/projects';
 import SearchNEU from './components/ProjectPage/SearchNEU';
 import Mbta from './components/ProjectPage/mbta';
+import AboutMe from './components/AboutMe/aboutme';
 
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
           <Route path="/Projects" element={<Projects />} />
           <Route path='/SearchNEU' element={<SearchNEU/>} />
           <Route path='/mbta' element={<Mbta />} />
+          <Route path='/AboutMe' element={<AboutMe />} />
+        </Routes>
+        <Routes>
+          <Route path="/" element={<Projects />} />
         </Routes>
         <Footer />
       </div>

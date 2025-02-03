@@ -2,16 +2,16 @@
 
 .Footer {
     color: var(--color-text);
-    font-size: 15px;
     position: relative;
     display: flex;
     z-index: 2;
     padding: 40px 100px;
     justify-content: space-between;
+
+    align-items: center;
 }
 
 .Socials {
-    align-items: center;
     margin-right: -20;
     display: flex;
     gap: 45px;
@@ -20,11 +20,11 @@
 
 .Socials a {
     color: var(--color-text);
-    font-weight: 400;
+    font-size: 15px;
 }
 
 .Name {
-    justify-content: flex-start;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 650px) {

@@ -28,7 +28,7 @@ export const Navbar = () => {
             >
                 <li className={styles.work}><Link to="/projects">WORK</Link></li>
                 <li><Link to="/#play">PLAY</Link></li>
-                <li><Link to="/#about">ABOUT</Link></li>
+                <li><Link to="/aboutme">ABOUT</Link></li>
             </u1>
         </div>
     </nav>

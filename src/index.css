@@ -1,9 +1,8 @@
 body {
   background-color: white;
-  background-image: url("/dist/assets/background.png");
+  background-image: url("/public/assets/background.png");
   background-repeat: repeat;
-  background-position: 0 0;
-  background-size: contain;
+  background-size: 70vw;
 }
 
 * {
@@ -12,4 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Outfit", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
 }

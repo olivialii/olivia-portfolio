@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { getImageUrl, setWhiteBackground, defaultBackground } from '../../utils';
+import {setWhiteBackground, defaultBackground } from '../../utils';
 
 import styles from "./SearchNEU.module.css";
 //import Banner from './Banner/banner';

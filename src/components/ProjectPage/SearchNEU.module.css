@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .ProjectTitle {
-    color: var(--color-text);
+    font-size: 28px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
