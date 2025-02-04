@@ -27,6 +27,17 @@
     font-size: 15px;
 }
 
+.bottom {
+    color: var(--color-text);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    background: rgb(231, 231, 231);
+    padding: 20px;
+
+    border-top: 2px solid rgb(174, 174, 174);
+}
+
 @media screen and (max-width: 650px) {
     .Footer, .Socials {
         align-items: center;
