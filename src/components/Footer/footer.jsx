@@ -4,7 +4,7 @@ import styles from "./footer.module.css";
 export const Footer = () => {
     return (
         <div className={styles.Footer}> 
-            <div className={styles.Name}>olivia li</div>
+            <div className={styles.Name}> <a href="/">olivia li</a></div>
             <u1 className={styles.Socials}>
                 
                 <li><a href="https://www.linkedin.com/in/olivia-lii" target="_blank">LINKEDIN</a></li>

@@ -7,7 +7,7 @@ import Projects from './components/Projects/projects';
 import SearchNEU from './components/ProjectPage/SearchNEU';
 import Mbta from './components/ProjectPage/mbta';
 import AboutMe from './components/AboutMe/aboutme';
-import Play from './components/play/play';
+import Play from './components/Play/play';
 
 
 function App() {

@@ -30,8 +30,10 @@ const Mbta = () => {
         }
         desc= {<div>
           Creating a more intuitive app for navigating Boston
-          <br/><br/>
+          <br/><br/><br/>
+          <div>
           🚧 This page is under construction 🚧
+          </div>
         </div>}>
       </Subheader>
 
