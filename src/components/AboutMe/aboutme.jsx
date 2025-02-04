@@ -11,7 +11,7 @@ const AboutMe = () => {
                 <h2>Hey, I'm Olivia!</h2>
                 <br/><br/>
                 <div>
-                    I’m from Brooklyn, NY, and I’m a second year at Northeastern University studying CS + Design 🩷
+                    I’m a second year at Northeastern University studying CS + Design.
                     <br/><br/>
                     I enjoy exploring how different tools and technologies can come together to create interactive experiences for different communities. By understanding users and experimenting with new ways to bring ideas to life, I want to be able to change the way people interact with the digital world. 
                     <br/><br/>

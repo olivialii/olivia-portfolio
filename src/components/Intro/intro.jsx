@@ -7,9 +7,11 @@ export const Intro = () => {
     return (
         <section className = {styles.container}>
             <div className={styles.content}>
-                <h1 className={styles.title}> olivia li</h1>
+
+                <div className={styles.name}> <h1>Hi! I'm Olivia Li. </h1></div>
+                
                 <p className={styles.desc}>
-                    is a designer who is passionate about: ui/ux, 
+                    I'm passionate about ui/ux design, 
                     front-end dev, prototyping, and working on fun, 
                     impactful, community-centered projects ♡
                 </p>

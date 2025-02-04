@@ -15,7 +15,8 @@ export const Footer = () => {
             </div>
 
             <div className={styles.bottom}>
-                Made w/ javascript, css, & react.
+                <a href="https://github.com/olivial215/olivia-portfolio" target="_blank">
+                <img src="/assets/github-mark.png"></img>Made w/ jsx, css, & react.</a>
             </div>
         </div>
     );

@@ -38,6 +38,15 @@
     border-top: 2px solid rgb(174, 174, 174);
 }
 
+.bottom img {
+    width: 18px;
+    padding-right: 5px;
+}
+
+.bottom a {
+    font-size: 14px;
+}
+
 @media screen and (max-width: 650px) {
     .Footer, .Socials {
         align-items: center;

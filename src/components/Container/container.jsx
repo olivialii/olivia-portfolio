@@ -3,8 +3,10 @@ import React from 'react';
 import styles from "./container.module.css";
 import { Link } from 'react-router-dom';
 
+
 const Container = ({title, desc, img, link}) => {
-    return (
+
+  return (
       <Link to={link}>
         <div className={styles.container}>
           <div className={styles.items}>

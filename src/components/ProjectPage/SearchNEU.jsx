@@ -191,9 +191,9 @@ const SearchNEU = () => {
           <div>
           <ul>
             <li>Prototyping designs gives the opportunity to obtain valuable usability feedback, and helps developers understand how to implement specific interactions</li>
-            <br/>
+     
             <li>Document design decisions. (Don’t just discard “bad” iterations, write down why they were “bad”!). This is important for looking back on, especially for new designers </li>
-            <br/>
+        
             <li>Explore less common contexts of use to design for all users. (Consider CPS and Law students when designing the filter)</li>
           </ul>
           </div>
