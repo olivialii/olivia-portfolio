@@ -28,7 +28,11 @@ const Mbta = () => {
           <div> MBTA Case Study </div>
         </div>
         }
-        desc= {<div></div>}>
+        desc= {<div>
+          Creating a more intuitive app for navigating Boston
+          <br/><br/>
+          🚧 This page is under construction 🚧
+        </div>}>
       </Subheader>
 
     </div>

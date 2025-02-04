@@ -7,6 +7,7 @@ import Projects from './components/Projects/projects';
 import SearchNEU from './components/ProjectPage/SearchNEU';
 import Mbta from './components/ProjectPage/mbta';
 import AboutMe from './components/AboutMe/aboutme';
+import Play from './components/play/play';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='/SearchNEU' element={<SearchNEU/>} />
           <Route path='/mbta' element={<Mbta />} />
           <Route path='/AboutMe' element={<AboutMe />} />
+          <Route path='/Play' element={<Play />} />
         </Routes>
         <Routes>
           <Route path="/" element={<Projects />} />

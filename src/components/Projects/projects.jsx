@@ -19,12 +19,16 @@ const Projects = () => {
       <Container 
         title= "MBTA Case Study" 
         desc= "Creating a more intuitive app for navigating Boston's public transportation system"
+        img="/assets/mbta/mbtaPreview.png"
         link="/Mbta">
       </Container>
 
       <Container 
         title= "Research Assistant @ DAILP" 
-        desc= "Designing new features for an Indigenous digital language interface based on community needs">
+        desc= "Designing new features for an Indigenous digital language interface based on community needs"
+        img= "/assets/dailp/dailpPreview.png "
+        link="/"
+        >
       </Container>
     </div>
   );

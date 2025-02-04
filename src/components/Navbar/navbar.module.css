@@ -11,8 +11,9 @@
 }
 
 .logo {
-    font-size: 32px;
+    width: 70px;
     color: var(--color-text);
+    transform: scaleX(-1)
 }
 
 .menu {

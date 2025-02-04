@@ -13,7 +13,7 @@ export const Intro = () => {
                     front-end dev, prototyping, and working on fun, 
                     impactful, community-centered projects ♡
                 </p>
-                <Link to="/projects"> <a className ={styles.viewBtn}> VIEW MY WORK →</a></Link>
+                <Link to="/projects"> <a className ={styles.viewBtn}> VIEW MY WORK  <span>↓</span></a></Link>
             </div>
         </section>
 

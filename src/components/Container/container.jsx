@@ -9,7 +9,7 @@ const Container = ({title, desc, img, link}) => {
         <div className={styles.container}>
           <div className={styles.items}>
             <img className={styles.img} src={img}></img>
-            <h1> {title}</h1>
+            <h2> {title}</h2>
             <p>{desc}</p>
           </div>
         </div>

@@ -2,7 +2,6 @@
 
 .container {
     width: 100%;
-    height: 100%;
     max-width: 960px;
     min-width: fit-content;
 
@@ -34,13 +33,15 @@ h2 {
 
 
 .img {
+    object-fit: scale-down;
     display: block;
     margin-left: auto;
     margin-right: auto;
 
-    padding: 2%;
+    padding: 4%;
+    padding-bottom: 40px;
     width: 100%;
-    height: 100%;
+    max-height: 328px;
     max-width: 500px;
     min-width: 200px;
 }
