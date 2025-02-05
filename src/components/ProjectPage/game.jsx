@@ -20,23 +20,24 @@ const Game = () => {
   return (
     <div>
 
+
       <Subheader
         subheader= 
         {
         <div class={styles.ProjectTitle}>
-          <Link class={styles.link} to={"/Projects"}> ⬅️ Work / </Link> 
-          <div> Bakery Minigame Prototype </div>
+          <Link class={styles.link} to={"/Play"}> ⬅️ Play / </Link> 
+          <h2> Bakery Minigame Prototype </h2>
         </div>
         }
         desc= {<div>
           Prototyping with Processing to bring a mini game concept to life. 
-          <br/><br/><br/>
-          <div>
-          🚧 This page is under construction 🚧
-          </div>
+          <br/>
         </div>}>
       </Subheader>
 
+         <div className={styles.construction}>
+          🚧 This page is under construction! 🚧
+          </div> <br/>
     </div>
   );
 };

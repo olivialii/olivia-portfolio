@@ -17,7 +17,7 @@ const Projects = () => {
 
       <Container 
         title= "MBTA Case Study" 
-        desc= "Creating a more intuitive app for navigating Boston's public transportation system"
+        desc= "Designing a fun, interactive app to enhance the experience of exploring Boston using public transportation"
         img="/assets/mbta/mbtaPreview.png"
         link="/Mbta">
       </Container>
