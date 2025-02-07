@@ -5,7 +5,7 @@ import styles from "./aboutme.module.css";
 const AboutMe = () => {
     return (
         <div className={styles.container}>
-            <img className={styles.me} src="/assets/me.png"></img>
+            <img className={styles.me} src="/assets/me.jpg"></img>
 
             <div className={styles.text}>
                 <h2>Hey, I'm Olivia!</h2>

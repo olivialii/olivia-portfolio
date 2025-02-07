@@ -116,9 +116,9 @@ const SearchNEU = () => {
             <div class={styles.imgLeft}>
               <img class={styles.cards} src= "/assets/search/cards.png"></img>
               <div>
-              We created multiple iterations in an attempt to determine the best format. One of our challenges was trying not to overload the card with too much dense information, and deciding whether or not some elements needed to be omitted to free up space.
+              We created multiple iterations in an attempt to determine the best format. One of our challenges was trying not to overload the card with too much information, and deciding whether or not some elements needed to be omitted to free up space.
               <br/><br/>
-              By using font weight (contrast) and color, we were able to include all elements in our final prototype. Now, students can see a lot more course information at first glance!
+              Using font weight and text color, we established a visual heirarchy in our final prototype, allowing users to easily process and compare course details at first glance.
               </div>
             </div>
 

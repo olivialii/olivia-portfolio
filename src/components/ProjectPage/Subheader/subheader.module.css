@@ -1,9 +1,7 @@
 @import "../../../vars.css";
 
 .content {
-
-    
-    max-width: 1200px;
+    max-width: 1000px;
     padding: 10px 95px 50px 80px;
     margin: auto;
     
