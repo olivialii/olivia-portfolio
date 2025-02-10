@@ -32,7 +32,7 @@
     letter-spacing: .10em;
 
     animation: 
-    typing 3s steps(40, end),
+    typing 3s steps(35, end),
     blink-caret .75s step-end infinite;  
     
 }
