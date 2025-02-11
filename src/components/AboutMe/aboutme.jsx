@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from "./aboutme.module.css";
+import { FadeIn } from '../FadeIn';
 
 
 const AboutMe = () => {
     return (
-        <div className={styles.container}>
+    <FadeIn
+    content={ <div className={styles.container}>
             <img className={styles.me} src="/assets/me.jpg"></img>
 
             <div className={styles.text}>
@@ -18,7 +20,11 @@ const AboutMe = () => {
                     Beyond that, I’m always looking for new ways to learn and grow, whether it’s through creative projects or just diving into something unfamiliar. In my free time, you’ll probably find me playing video games, drawing, trying out new recipes, or wandering the city in search of the perfect cafe. ☕️
                 </div>
             </div>
-        </div>
+        </div>}
+        
+      />
+       
+
     );
 };
 

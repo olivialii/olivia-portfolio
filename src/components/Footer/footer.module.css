@@ -14,16 +14,16 @@
 .Socials {
     margin-right: -20;
     display: flex;
-    gap: 45px;
+    gap: 35px;
     list-style: none;
 }
 
-.Socials a {
-    color: var(--color-text);
-    font-size: 15px;
-}
-
 .Name {
+    padding-right: 20px;
+}
+.Socials a {
+
+    color: var(--color-text);
     font-size: 15px;
 }
 
@@ -50,10 +50,17 @@
 @media screen and (max-width: 650px) {
     .Footer, .Socials {
         align-items: center;
-        gap: 20px;
+        gap: 10px;
+       
     }
 
     .Footer {
-        padding: 40px 60px;
+        padding: 40px 40px;
     }
+
+    .Socials a {
+        font-size: 14px;
+    }
+
+
 }

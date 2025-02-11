@@ -9,12 +9,14 @@ import Mbta from './components/ProjectPage/mbta';
 import AboutMe from './components/AboutMe/aboutme';
 import Play from './components/Play/play';
 import Game from './components/ProjectPage/game';
+import { ScrollToTop } from './utils';
 
 
 function App() {
   
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <Navbar />
         <Routes>
@@ -31,6 +33,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
+      
     </Router>
   );
 }
