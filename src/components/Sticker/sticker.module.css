@@ -1,0 +1,19 @@
+.sticker {
+    position: absolute;
+    cursor: grab;
+    width: 100px; 
+    height: auto;
+    z-index: 100;
+}   
+
+.sticker:active {
+    cursor: grabbing;
+}
+
+.stickerImg {
+
+    
+    width: 100%;
+    height: auto;
+    user-select: none;
+}
