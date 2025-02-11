@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from "./subheader.module.css";
+import { FadeIn } from '../../FadeIn';
 
 
 const Subheader = ({number, desc, subheader}) => {
 
     return (
+        <FadeIn
+        content={
         <div>
             <div className={styles.content}>
 
@@ -18,6 +21,8 @@ const Subheader = ({number, desc, subheader}) => {
 
             </div>
         </div>
+        }
+        />
     );
   };
   
