@@ -17,7 +17,7 @@ export const Intro = () => {
                 <p className={styles.desc}>
                     I'm passionate about ui/ux design, 
                     front-end dev, prototyping, and working on fun, 
-                    impactful, community-centered projects ♡
+                    impactful, community-centered projects. 
                 </p>
                 <Link to="/projects"> <a className ={styles.viewBtn}> VIEW MY WORK  <span>↓</span></a></Link>
 
