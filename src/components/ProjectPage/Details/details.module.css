@@ -6,6 +6,9 @@
     padding: 0 100px;
 
     margin: auto;
+
+    max-width: 1000px;
+
     
 }
 
@@ -19,7 +22,7 @@
 }
 
 .column {
-    padding: auto;
+    gap: 4px;
     display: flex;
     flex-direction: column;
     max-width: 180px;
