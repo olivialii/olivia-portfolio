@@ -19,17 +19,12 @@ export const Intro = () => {
                     front-end dev, prototyping, and working on fun, 
                     impactful, community-centered projects. 
                 </p>
-                <Link to="/projects"> <a className ={styles.viewBtn}> VIEW MY WORK  <span>↓</span></a></Link>
-
-            <Sticker
-            img="/assets/play/cake-sticker.svg"
-            initialX='61vw'
-            initialY='46%'/>
+                <Link to="/projects"> <a className ={styles.viewBtn}> View my work <span>↓</span></a></Link>
 
             <Sticker
             img="/assets/play/cat-sticker.svg"
-            initialX='56vw'
-            initialY='58%'/>
+            initialX='59vw'
+            initialY='49%'/>
             </div>
 
         </section>    
