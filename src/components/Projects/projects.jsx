@@ -26,9 +26,18 @@ const Projects = () => {
         title= "Research Assistant @ DAILP" 
         desc= "Designing new features for an Indigenous digital language interface based on community needs"
         img= "/assets/dailp/dailpPreview.png "
-        link="/"
+        link="/DAILP"
         >
       </Container>
+
+      <Container 
+        title= "Fridge." 
+        desc= "Gamifying the experience of supporting local restaurants through an interactive mobile webapp"
+        img="/assets/fridge.png"
+        link="/Fridge">
+      </Container>
+      
+
     </div>
   );
 };

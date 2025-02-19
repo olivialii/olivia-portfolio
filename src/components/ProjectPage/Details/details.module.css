@@ -36,6 +36,9 @@
 @media screen and (max-width: 650px) {
     .Details {
         gap: 5vw;
+        flex-wrap: wrap;
     }
+
+
 }
 

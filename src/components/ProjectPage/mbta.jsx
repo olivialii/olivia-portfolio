@@ -27,7 +27,7 @@ const Mbta = () => {
         subheader= 
         {
         <div class={styles.ProjectTitle}>
-          <Link class={styles.link} to={"/Projects"}> ⬅️ Work / </Link> 
+          <Link class={styles.link} to={"/Projects"}> ⬅️ Projects / </Link> 
           <h2> MBTA Case Study </h2>
         </div>
         }

@@ -28,7 +28,7 @@ export const Navbar = () => {
                                 isActive ? `${styles.activeLink}` : ''
                             }
                         >
-                            WORK
+                            PROJECTS
                         </NavLink>
                     </li>
                     <li>
