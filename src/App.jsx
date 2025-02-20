@@ -11,7 +11,7 @@ import Play from './components/Play/play';
 import Game from './components/ProjectPage/game';
 import { ScrollToTop } from './utils';
 import Fridge from './components/ProjectPage/fridge';
-import Dailp from './components/ProjectPage/DAILP';
+import Dailp from './components/ProjectPage/dailpp';
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
           <Route path='/Play' element={<Play />} />
           <Route path='/Game' element={<Game />} />
           <Route path='/Fridge' element={<Fridge />} />
-          <Route path='/DAILP' element={<Dailp />} />
+          <Route path='/Dailp' element={<Dailp />} />
         </Routes>
         <Routes>
           <Route path="/" element={<Projects />} />
