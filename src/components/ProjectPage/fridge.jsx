@@ -36,7 +36,7 @@ const Fridge = () => {
 
       <Details
         role="Designer & Front-end Developer"
-        duration="February 7-9 (72 hrs)"
+        duration="February 7-9 2025 (72 hrs)"
         team={<div>2 Designers/ Front-end Devs
         <br/>2 Fullstack Devs
       </div>}

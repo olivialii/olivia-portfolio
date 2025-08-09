@@ -5,13 +5,17 @@
     height: fit-content;
 
     color: var(--color-text);
-    padding: 0 50px;
+    padding: 0 100px;
     padding-bottom: 60px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
-
-
+@media (max-width: 900px) {
+    .Projects {
+        padding: 0 50px;
+        grid-template-columns: 1fr;
+    }
+}

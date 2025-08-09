@@ -12,6 +12,8 @@ import Game from './components/ProjectPage/game';
 import { ScrollToTop } from './utils';
 import Fridge from './components/ProjectPage/fridge';
 import Dailp from './components/ProjectPage/dailpp';
+import Eddy from './components/ProjectPage/eddy';
+import Kuu from './components/ProjectPage/kuu';
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
           <Route path='/Game' element={<Game />} />
           <Route path='/Fridge' element={<Fridge />} />
           <Route path='/Dailp' element={<Dailp />} />
+          <Route path='/Eddy' element={<Eddy />} />
+          <Route path='/Kuu' element={<Kuu />} />
         </Routes>
         <Routes>
           <Route path="/" element={<Projects />} />

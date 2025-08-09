@@ -1,0 +1,42 @@
+@import "../../vars.css";
+
+.ProjectTitle {
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+
+
+.link {
+    font-size: 18px;
+    padding-right: 10px;
+    color: var(--color-text-light);
+}
+
+.bold {
+    font-weight: 1000;
+    color: var(--color-text);
+    
+}
+
+.spread {
+    width: 50%;
+}
+
+.fullLengthImg {
+    display: block;
+    width: 100%;
+    padding: 1%;
+
+} 
+.spread {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 1125px;
+    margin: auto;
+
+    
+}
