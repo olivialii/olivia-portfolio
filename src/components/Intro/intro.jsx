@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from "./intro.module.css";
-import { Sticker } from '../Sticker/sticker';
 import { FadeIn } from '../FadeIn';
 
 export const Intro = () => {
@@ -11,20 +9,19 @@ export const Intro = () => {
         <section className = {styles.container}>
             <div className={styles.content}>
 
-                <div className={styles.name}> <h1>Hi! I'm 
-                    <span className={styles.olivia}> Olivia Li. </span> </h1></div>
+                <div className={styles.name}> Hi! I'm Olivia Li. </div>
                 
                 <p className={styles.desc}>
-                    I'm passionate about ui/ux design, 
-                    front-end dev, prototyping, and working on fun, 
-                    impactful, community-centered projects. 
+                I love working on fun, impactful, community-centered projects. 
+                Currently @ Northeastern University pursuing a combined degree 
+                in Design & Computer Science, and previously @ Akoya as a ui/ux 
+                design co-op.
                 </p>
-                <Link to="/projects"> <a className ={styles.viewBtn}> View my work <span>↓</span></a></Link>
 
-            <Sticker
-            img="/assets/play/cat-sticker.svg"
-            initialX='59vw'
-            initialY='49%'/>
+                <p className={styles.subdesc}>
+                I also enjoy gaming, baking, and digital art!
+                </p>
+
             </div>
 
         </section>    

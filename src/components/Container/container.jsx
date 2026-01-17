@@ -4,21 +4,26 @@ import { Link } from 'react-router-dom';
 import { FadeIn } from '../FadeIn';
 
 
-const Container = ({ title, desc, img, link }) => {
+const Container = ({ title, desc, img, hoverImg, link }) => {
   return (
     <FadeIn
       content={
-      <Link to={link}>
-        <div className={styles.container}>
-          <div className={styles.items}>
-            <img className={styles.img} src={img} alt={title} />
-            <h2>{title}</h2>
-            <p>{desc}</p>
+        <Link to={link}>
+          <div
+            className={styles.container}
+            style={{ "--hover-img": `url(${hoverImg})` }}
+          >
+            <div className={styles.items}>
+
+                <h2>{title}</h2>
+                <p className={styles.desc}>{desc}</p>
+
+              <img className={styles.img} src={img} alt={title} />
+            </div>
           </div>
-        </div>
-      </Link>
-      }>
-    </FadeIn>
+        </Link>
+      }
+    />
   );
 };
 

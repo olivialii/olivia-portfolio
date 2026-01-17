@@ -1,41 +1,52 @@
 @import "../../../vars.css";
 
 .Section {
-    display: flex;
-    justify-content: center;
-    padding: 0 100px;
 
+    padding: 40px 80px ;
     margin: auto;
-
-    max-width: 1000px;
-
+    max-width: 1500px;
     
 }
 
 .Details {
+    color: var(--color-text);
+
     display: flex;
-    gap: 8vw;
     flex-direction: row;
-    padding-bottom: 50px;
-    font-size: 20px;
-    color: var(--color-text-light);
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+
+    gap: clamp(24px, 5vw, 80px);
 }
 
 .column {
     gap: 4px;
     display: flex;
     flex-direction: column;
-    max-width: 180px;
+    max-width: 400px;
+
+}
+
+.column p {
+    font-size: 16px;
 }
 
 .category {
-    font-weight: 800;
-    color: var(--color-text);
+    color: var(--color-accent);
+    
 }
 
 @media screen and (max-width: 650px) {
+
+    .Section {
+        padding: 0 40px;
+        padding-bottom: 40px;
+    }
+
     .Details {
-        gap: 5vw;
+        gap: 20px;
         flex-wrap: wrap;
     }
 

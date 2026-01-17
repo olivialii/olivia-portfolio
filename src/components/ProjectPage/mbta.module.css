@@ -1,15 +1,48 @@
 @import "../../vars.css";
 
-.ProjectTitle {
-    font-size: 28px;
+
+.content {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 40px;
 }
 
-a {
-    color: var(--color-text);
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
+
+.block {
+    padding-bottom: 60px;
+}
+
+@media (max-width: 700px) {
+    .block {
+        padding-bottom: 20px;
+    }
+
+    .content {
+        gap: 28px;
+        padding-bottom: 20px;
+    } 
+}
+
+
+p {
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.3;
+}
+
+
+.details {
+    font-size: 16px;
+}
+a {
+    color: var(--color-accent);
+}
+
 
 .link {
     font-size: 18px;
@@ -30,17 +63,18 @@ a {
     padding:  20px 0;
 }
 
+
 .phones {
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;  
-    
+    gap: 24px;              
 }
 
 .phones img {
-    padding: 2%;
     width: 25vw;
-    max-width: 270px;
+    max-width: 300px;
+    min-width: 175px;
     object-fit: scale-down;
 
 }
@@ -57,3 +91,5 @@ a {
     display: flex;
     justify-content: center;
 }
+
+

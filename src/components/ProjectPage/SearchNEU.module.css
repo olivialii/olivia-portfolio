@@ -1,12 +1,73 @@
 @import "../../vars.css";
 
-.ProjectTitle {
-    font-size: 28px;
+.content {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 40px;
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.block {
+    padding-bottom: 60px;
+}
+
+@media (max-width: 700px) {
+    .block {
+        padding-bottom: 20px;
+    }
+
+    .content {
+        gap: 28px;
+        padding-bottom: 20px;
+    } 
+}
+
+p {
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.3;
+}
+
+.gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    padding: 0 160px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 900px) {
+    .photo-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  
+  @media (max-width: 600px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+.details {
+    font-size: 16px;
+}
 a {
     color: var(--color-accent);
 }
@@ -17,10 +78,7 @@ a {
     color: var(--color-text-light);
 }
 
-.fullLengthImg {
-    display: block;
-    width: 100%;
-} 
+
 
 .threePhones {
     display: block;

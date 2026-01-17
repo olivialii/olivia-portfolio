@@ -1,31 +1,36 @@
 import React from 'react';
 import styles from "./details.module.css";
-
+import Category from '../Category/category';
 const Details = ({role, duration, team, tools}) => {
 
     return (
         <div className={styles.Section}>
       <div className={styles.Details}>
-        <div className={styles.column}>
-            <p className={styles.category}>Role</p>
-            <p> {role} </p>
-        </div>
 
         <div className={styles.column}>
-            <p className={styles.category}>Duration</p>
+            <Category category='TIMELINE'/>
             <p> {duration} </p>
         </div>
 
         <div className={styles.column}>
-            <p className={styles.category}>Team</p>
+            <Category category='ROLE'/>
+            <p> {role} </p>
+        </div>
+
+        <div className={styles.column}>
+            <Category category='FOR'/>
+            <p> {tools} </p>
+        </div>
+
+
+
+        <div className={styles.column}>
+            <Category category='WITH'/>
             <p> {team} </p>
          
         </div>
 
-        <div className={styles.column}>
-            <p className={styles.category}>Tools</p>
-            <p> {tools} </p>
-        </div>
+
 
       </div>
       </div>

@@ -7,16 +7,23 @@ export const Navbar = () => {
 
     return (
         <nav className={styles.navbar}>
-            <a href="/">
-                <img className={styles.logo} src="/assets/nav/face.png" alt="logo" />
-            </a>
+            <div className={styles.leftNav}>
+                <a href="/">
+                    <img className={styles.logo} src="/assets/nav/face.png" alt="logo" />
+                    <p>Olivia Li</p>
+                </a>
+            </div>
+
             <div className={styles.menu}>
+
                 <img
                     className={styles.menuBtn}
                     src={menuOpen ? '/assets/nav/closeIcon.png' : '/assets/nav/menuIcon.png'}
                     alt="menu-button"
                     onClick={() => setMenuOpen(!menuOpen)}
                 />
+        
+
                 <ul
                     className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
                     onClick={() => setMenuOpen(false)}
@@ -28,7 +35,7 @@ export const Navbar = () => {
                                 isActive ? `${styles.activeLink}` : ''
                             }
                         >
-                            PROJECTS
+                            Projects
                         </NavLink>
                     </li>
                     <li>
@@ -38,7 +45,7 @@ export const Navbar = () => {
                                 isActive ? `${styles.activeLink}` : ''
                             }
                         >
-                            PLAY
+                            Play
                         </NavLink>
                     </li>
                     <li>
@@ -48,7 +55,7 @@ export const Navbar = () => {
                                 isActive ? `${styles.activeLink}` : ''
                             }
                         >
-                            ABOUT
+                            About
                         </NavLink>
                     </li>
                 </ul>

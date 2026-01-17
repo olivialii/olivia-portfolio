@@ -1,0 +1,38 @@
+@import "../../../vars.css";
+
+.listItem {
+    
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;  
+
+    color: var(--color-accent);
+    padding-bottom: 8px;
+}
+
+.symbol {
+    font-size: 20px;
+    width: 20px;
+    flex-shrink: 0;
+    font-weight: 700;
+}
+
+.text {
+    color: var(--color-text);
+    flex: 1 0 0;
+}
+
+.boldtext {
+    font-weight: 700;
+}
+
+
+@media (max-width: 700px) {
+    .listItem {
+
+    }
+}
+

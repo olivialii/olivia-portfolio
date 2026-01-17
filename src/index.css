@@ -1,3 +1,5 @@
+
+
 body {
   /* background: url("/public/assets/background.png"); */
   background-color: rgb(255, 255, 255);
@@ -10,7 +12,21 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  font-family: 'Instrument Sans', sans-serif;
   font-style: normal;
-  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+
+
+
+@media (max-width: 650px) {
+  * {
+
+    
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

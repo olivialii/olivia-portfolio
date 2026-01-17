@@ -2,29 +2,33 @@
 
 .banner {
     position: relative;
-    padding-bottom: 56px;
+    padding-bottom: 60px;
+    max-width: 1500px;
+
+    margin: auto;
 }
 
 .bannerImage {
     width: 100%;
     height: auto;
-    max-height: 850px;
+
     object-fit:cover;
-}
-
-.logo {
-    width: 3%;
-    padding-top: 4%;
-    position: absolute;
-
-    left: 3%;
+    
 }
 
 .other {
-    width: 28%;
+    width: 30vw;
+    max-width: 350px;
+    min-width: 120px;
 
-    padding-top: 20%;
+    padding-top: 3vw;
     position: absolute;
   
-    right: 10vh;
+    right: 8vh;
+}
+
+@media screen and (max-width: 650px) {
+    .banner {
+        padding-bottom: 40px;
+    }
 }

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import { Navbar } from "./components/Navbar/navbar";
 import { Intro } from "./components/Intro/intro";
@@ -14,6 +14,7 @@ import Fridge from './components/ProjectPage/fridge';
 import Dailp from './components/ProjectPage/dailpp';
 import Eddy from './components/ProjectPage/eddy';
 import Kuu from './components/ProjectPage/kuu';
+import Akoya from './components/ProjectPage/akoya';
 
 
 function App() {
@@ -21,13 +22,15 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Intro />} />
+          <Route path="/" element={<Navigate to="/Projects" replace />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path='/SearchNEU' element={<SearchNEU/>} />
           <Route path='/mbta' element={<Mbta />} />
+          <Route path='/Akoya' element={<Akoya />} />
           <Route path='/AboutMe' element={<AboutMe />} />
           <Route path='/Play' element={<Play />} />
           <Route path='/Game' element={<Game />} />
