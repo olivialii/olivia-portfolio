@@ -159,7 +159,7 @@ const Mbta = () => {
 
                 <ListItem 
                 symbol={'2'}
-                text={'Shift focus toward incentivizing exploration through personalized recommendations and rewards. '}/>
+                text={'Shift focus toward incentivizing exploration through personalized recommendations and rewards.'}/>
               </div>
             </div>}
         ></Imagetext>
