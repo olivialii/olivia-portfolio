@@ -53,13 +53,14 @@ const Akoya = () => {
       
       <div class={styles.block}> 
       <Imagetext
-          image={'/assets/mbta/users.png'}
+          image={'/assets/akoya/about.png'}
           text={
             <div className={styles.content}>
               
               <div className={styles.section}> 
                 <Category category={'ABOUT AKOYA'}/>
-                <p>Akoya is a financial data-access network that enables fintechs and financial institutions to securely share consumer-permissioned data through APIs.</p>
+                <FocusText text={'Akoya is a financial data-access network that enables fintechs and financial institutions to securely share consumer-permissioned data through APIs.'}></FocusText>
+                
               </div>
 
               <div className={styles.section}> 
@@ -71,135 +72,184 @@ const Akoya = () => {
         ></Imagetext>
       </div>
 
-
-
-
-
       <div class={styles.block}> 
-        <Divider text={'Final Designs Preview'}/>
-        
-        
+        <Divider text={'Dashboard Designs Preview'}/>
+        <FullImage image={'assets/akoya/preview.png'}></FullImage>
       </div>
 
       <div class={styles.block}> 
         <Divider 
         text={'Data Recipient Hub'}
-        subtext={'Defining the problem'}/>
-        <FullImage image={'/assets/mbta/affinity.png'}
-        caption={'Affinity diagram with quotes from interviews'}/>
+        subtext={'Understanding context'}/>
+         <Imagetext
+          image={'/assets/akoya/journey.png'}
+          caption={'data recipient customer journey'}
+          text={
+            <div className={styles.content}>
+              <p> Designing an effective tool required a clear understanding of who was using the Data Recipient Hub and what they were trying to accomplish. What role does the Hub play within Akoya’s ecosystem? What goals do different users bring to the dashboard, and how do those goals shape their expectations during onboarding?</p>
+              <p>In my first few weeks, I focused on building foundational context around Akoya’s products and user flows. I reviewed internal documentation, design specs, and existing workflows, and asked frequent questions to better understand how data recipients interact with the platform and where friction commonly occurs.</p>
+            </div>}
+        ></Imagetext>
       </div>
 
       <div class={styles.block}> 
       <Imagetext
-          image={'/assets/mbta/users.png'}
+          image={'/assets/search/current.png'}
+          caption={'current dashboard'}
           text={
             <div className={styles.content}>
-              <FocusText text={'To gain a better understanding of people that use the MBTA, I interviewed riders on the Green Line and students around campus '}/>
-              <div className={styles.section}> 
-                <Category category={'INSIGHTS'}/>
               
-                <ListItem symbol={'1'} text={'Riders in reduced fare programs or weekly/monthly passes often experience frustrations because their payment methods are poorly integrated with modern mobile systems'} />
-                <ListItem symbol={'2'} text={'Unfamiliarity and confusing navigation limit riders’ desire to explore beyond their usual routes. '} />
-                <ListItem symbol={'3'} text={'Riders want real-time balance visibility and account-based systems rather than physical cards.'} />
-              </div>
-
               <div className={styles.section}> 
-              <Category category={'SYNTHESIS'}/>
-              <p>Using these insights, I created an affinity diagram to identify patterns and pain points, which informed user personas and guided design decisions for a mobile app that simplifies fare management and encourages exploration via the T.</p>
+                <Category category={'AUDITING THE EXISTING DASHBOARD'}/>
+                <p>To ground this understanding in the current experience, I explored the existing developer portal hands-on.</p>
+                <p>As I navigated the dashboard, I documented my findings in a comprehensive audit table that captured: Supported personas Key tasks and actions tile states Gaps and opportunities for improvement</p>
+                <p>This table became a working artifact that helped me identify which tiles required deeper exploration. It also supported early ideation and brainstorming around which tiles to redesign and how they could better serve specific users.</p>
               </div>
             </div>}
         ></Imagetext>
       </div>
 
       <div class={styles.block}> 
-        <Divider 
-        text={'Planning'}
-        subtext={'Sitemap, low fidelity'}/>
-        <FullImage 
-        image={'/assets/mbta/sitemap.png'}
-        caption={'Sitemap'}/>
+        <div class={styles.section}> 
+          <Divider text={'Dashboard Designs Preview'}/>
+          <FullImage 
+            image={'assets/akoya/table.png'}
+            caption={'Keeping track of each dashboard tile'}>
+          </FullImage>
+          
+          <Imagetext
+          image={'/assets/akoya/matrix.png'}
+          caption={'Visual design matrix'}
+          text={
+            <div className={styles.content}>
+              <FocusText text={'Utilizing a design matrix helped me centralize design decisions + create a shared source of truth for how each tile supports user needs, personas, and permissions. '}/>
+              <div className={styles.section}> 
+                <p>As the project progressed, I introduced a design matrix to centralize design decisions and create a shared source of truth across teams. The matrix provided a clear, visual overview of how each dashboard tile supports user needs, personas, and permissions.</p>
+                <p>IThe matrix provides a visual representation of each tile’s supported personas, required states (default, empty, error), and core actions and tasks</p>
+              </div>
+
+              <div className={styles.section}> 
+                <Category category={'IMPACT'}/>
+                <p>Maintaining this matrix throughout the project improved alignment across design, product, and engineering as the dashboard evolved. Developers used it as a reference point during implementation, which made feedback more actionable and surfaced gaps early, especially when something was missing or didn’t quite make sense.</p>
+              </div>
+            </div>}
+        ></Imagetext>
+        </div>
       </div>
 
       <div class={styles.block}> 
-      <FullImage 
-        image={'/assets/mbta/lofi.png'}
-        caption={'Low fidelity'}/>
+        <Divider text={'Existing Precedents'}/>
+        <FullImage image={'assets/akoya/precedents.png'}></FullImage>
       </div>
+
 
       <div class={styles.block}> 
         <Divider 
-        text={'Initial Iterations'}/>
+          text={'Deep Dive: App Management Tile'}
+          subtext={'How might we design an app management tile that adapts to the user?'}/>
         
         <Imagetext
-          image={'/assets/mbta/initial.png'}
+          image={'/assets/akoya/currentapp.png'}
+          caption={'Current app management tile'}
+          text={
+            <div className={styles.content}>
+              <FocusText text={'The App Management tile is the primary entry point for creating, viewing, and managing sandbox and production apps.'}/>
+              <div className={styles.section}> 
+                <Category category={'PROBLEMS'}/>
+                <ListItem text={'Assumes user has full permissions to register and manage apps.'}></ListItem>
+                <ListItem text={'Lacks empty states, assumes that apps already exist'}></ListItem>
+                <ListItem text={'Static call to action doesn’t adapt to user context and lacks guidance for first-time or limited-access users'}></ListItem>
+              </div>
+
+              <div className={styles.section}> 
+                <Category category={'GOAL'}/>
+                
+              </div>
+            </div>}
+        ></Imagetext>
+        </div>
+
+        <div class={styles.block}>
+        <Imagetext
+          image={'/assets/akoya/1.png'}
           caption={'First iteration'}
           text={
             <div className={styles.content}>
-              <FocusText text={'How might we encourage exploration by creating a stress-free transit experience?'}/>
+              
               <div className={styles.section}> 
-                <Category category={'DESIGN HYPOTHESIS'}/>
-                <p>If we design an app that simplifies fare payment, integrates passes, and highlights T-accessible destinations, then riders will be more likely to use the MBTA and explore new places, because transit will feel easier, faster, and more rewarding.</p>
-              </div>
+                <Category category={'ITERATION 1:  Establishing Core Functionality'}/>
+                <p>My first iteration focused on defining the tile’s foundational actions and layout:</p>
 
-              <div className={styles.section}> 
-                <Category category={'FIRST ITERATION'}/>
-                <p>My first prototype’s main focus was addressing the lack of tap-to-pay in the MBTA system. It allows users to scan their CharlieCard to add it to the app, reload the card, and pay the fare by scanning a QR code.</p>
-              </div>
-
-              <div className={styles.section}> 
-              <Category category={'CHALLENGES'}/>
-              <p>Upon further research, I discovered that the MBTA was already in the process of implementing tap-to-pay, making the QR code feature redundant. The app also didn’t encourage exploration or improve engagement.</p>
+                <ListItem text={'Prioritized two primary actions: registering an app and viewing existing apps'}></ListItem>
+                <ListItem text={'Displayed a lightweight table preview showing app name and ID'}></ListItem>
+                <ListItem text={'Introduced a filter dropdown to help users quickly locate apps'}></ListItem>
+               
+               <p>How might we increase scalability and flexibility?</p>
               </div>
             </div>}
         ></Imagetext>
-      </div>
+        </div>
 
-
-      <div class={styles.block}> 
-        <Divider 
-        text={'Ideation (Round 2)'}/>
-        
+        <div class={styles.block}>
         <Imagetext
-          image={'/assets/mbta/tap.png'}
-          
+          image={'/assets/akoya/2.png'}
+          caption={'Second iteration'}
           text={
             <div className={styles.content}>
-              <FocusText text={'How might we adapt to MBTA’s plans to integrate tap-to-pay while still maintaining key features?'}/>
+              
               <div className={styles.section}> 
-                <ListItem 
-                symbol={'1'}
-                text={'Allow users to add CharlieCards directly to their phone’s digital wallet for seamless payment.'}/>
+                <Category category={'ITERATION 2: Scaling up'}/>
+                <p>Created a tile component after defining the general structure of the tile, making it flexible for future tiles that also require tables (e.g. the support tickets tile)</p>
+                <p>⚠️ At this stage, I introduced a status column, assuming each app had a single status.</p>
+                
+                <ListItem text={'During a design review, collaboration with product and engineering revealed a critical insight: apps can have multiple statuses depending on which financial institutions they’re connected to. This made a single status column misleading and insufficient.'}></ListItem>
+              </div>
+            </div>}
+        ></Imagetext>
+        </div>
 
-                <ListItem 
-                symbol={'2'}
-                text={'Shift focus toward incentivizing exploration through personalized recommendations and rewards.'}/>
+
+        <div class={styles.block}> 
+        <Imagetext
+          image={'/assets/akoya/future.png'}
+          text={
+            <div className={styles.content}>
+              <div className={styles.section}> 
+                <FocusText text={'How might we highlight changes or events that actually require user attention or action?'}></FocusText>
+                <Category category={'FUTURE EXPLORATIONS'}/>
+                
+                <ListItem text={'Conversations with engineers, product managers, and the design team helped clarify user needs.'}></ListItem>
+                <ListItem text={'This led to future explorations, with the broader question:'}></ListItem>
+              </div>
+              
+              <div className={styles.section}> 
+                <Category category={'EXPLORING USE CASES'}/>
+                <p>I explored scenarios where users would benefit from proactive signals, such as:</p>
+                <ListItem text={'Client secret resets'}></ListItem>
+                <ListItem text={'App configuration changes that require follow-up'}></ListItem>
+                <ListItem text={'Status changes tied to production access'}></ListItem>
+
+                <p>Client secret resets, in particular, emerged as a critical event that users should be immediately aware of, reinforcing the need for the tile to surface contextually important information rather than static metadata.</p>
               </div>
             </div>}
         ></Imagetext>
       </div>
 
-      <div class={styles.block}> 
+      <div class={styles.block}>
         <Imagetext
-          image={'/assets/mbta/solution.png'}
+          image={'/assets/akoya/mvp.png'}
+          caption={'Although I had many ideas and explorations, some were out of scope. We needed to define which features were necessary for the MVP'}
           text={
             <div className={styles.content}>
-             <Category category={'A SOLUTION'}/>
-
-                <p>Rather than scanning a QR code to pay, allow users to add CharlieCards to their digital wallet. This maintains the ability for users to reload their card ahead of time and pay for the fare using different payment methods, such as cash. </p>
-                <p>This feature would also allow the user to add passes that typically use physical cards, like reduced fare for the elderly, employee-provided Perq cards for workers, and weekly/monthly passes for daily commuters.</p>
-
+              
+              <div className={styles.section}> 
+                <Category category={'Defining the MVP'}/>
+                <p>While future explorations surfaced many opportunities to make the App Management tile more adaptive and informative, not all ideas were feasible within the project’s scope and timeline. To move forward, we needed to clearly define what functionality was essential for an MVP, and what could be deferred.</p>
+              </div>
             </div>}
         ></Imagetext>
-      </div>
-
-      <div class={styles.block}> 
-        <Divider 
-        text={'Final Designs'}/>
-
-        <FullImage image={'/assets/mbta/final.png'}/>
-
-        
-      </div>
+        </div>
+      
 
 
       <div class={styles.block}> 
@@ -210,34 +260,22 @@ const Akoya = () => {
           subheader={'Takeaways'}
           desc={
             <div className={styles.section}> 
-                <ListItem symbol={'1'} text={'Competitive Analysis. Many riders mentioned existing transit systems that they preferred. Taking a look at precedents that work well and ones that dont provides good inspiration'} />
-                <ListItem symbol={'2'} text={'Understanding user stories. The interviews. I conducted resulted in many different answers from people from different walks of life, that have different experiences with the T.  With affinity mapping, I was able to make that information more coherent '} />
-                <ListItem symbol={'3'} text={'Being flexible to evolving contexts: shifting project goals due to changes in current infrastructure. I wasn’t aware that tap to pay being implemented, which showed that more research was necessary'} />
-              </div>
-          }
-        />
-
-        <Subheader
-          subheader={'Next Steps'}
-          desc={
-            <div className={styles.section}> 
-                <ListItem symbol={'1'} text={'Create more complete user flows and prototypes and conduct user testing with riders '} />
-                <ListItem symbol={'2'} text={'Further explore and create more iterations for the destination recommendations feature. '} />
+                <ListItem 
+                  symbol={'1'} 
+                  boldtext={'Ask Questions (even obvious ones). '}
+                  text={' I learned quickly that asking questions helped me understand a lot of complex concepts about Akoya`s products and users. Those conversations often changed how I framed problems and led to stronger, more grounded design decisions.'} />
+                <ListItem 
+                  symbol={'2'} 
+                  boldtext={'Stay flexible because priorities shift fast. '}
+                  text={'Midway through my co-op, I had to pivot to a different project due to roadmap changes. It reinforced how important adaptability is, especially in fintech, where priorities can shift based on policy, partnerships, or company direction.'} />
+                <ListItem 
+                  symbol={'3'} 
+                  boldtext={'Explore ideas, even if they won’t ship (yet).'}
+                  text={'Some ideas weren’t immediately feasible due to technical or timeline constraints, but sharing them helped align the team on long-term direction, clarify MVP scope, and make more intentional tradeoffs. Even when ideas don’t ship, they still move the product forward.'} />
               </div>
           }
         />
       </div>
-
-    {/** 
-        <div className="p-{50px}">
-        <iframe width={"100%"} height={"500px"} src="https://embed.figma.com/deck/bDclkeQAIZNt7V8TgyR308/MBTA-slides?node-id=2-117&viewport=-18%2C106%2C0.24&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share&footer=false" allowfullscreen></iframe>
-        </div>
-   
-      <br/><br/><br/>
-    */}
-      
-    
-
     </div>
     </Gate>
   );
