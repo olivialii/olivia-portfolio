@@ -1,20 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './navbar.module.css';
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const navbarRef = useRef(null); // ref for detecting outside clicks
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+                setMenuOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
-        <nav className={styles.navbar}>
+        <nav className={styles.navbar} ref={navbarRef}>
             <div className={styles.leftNav}>
                 <a href="/">
                     <img className={styles.logo} src="/assets/nav/face.png" alt="logo" />
                     <p>Olivia Li</p>
                 </a>
-            </div>
-
-            <div className={styles.menu}>
 
                 <img
                     className={styles.menuBtn}
@@ -22,10 +34,11 @@ export const Navbar = () => {
                     alt="menu-button"
                     onClick={() => setMenuOpen(!menuOpen)}
                 />
-        
+            </div>
 
+            <div className={styles.menu}>
                 <ul
-                    className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+                    className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ''}`}
                     onClick={() => setMenuOpen(false)}
                 >
                     <li>
@@ -63,4 +76,3 @@ export const Navbar = () => {
         </nav>
     );
 };
-
