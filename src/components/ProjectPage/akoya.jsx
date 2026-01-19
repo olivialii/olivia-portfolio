@@ -125,7 +125,7 @@ const Akoya = () => {
               <FocusText text={'Utilizing a design matrix helped me centralize design decisions + create a shared source of truth for how each tile supports user needs, personas, and permissions. '}/>
               <div className={styles.section}> 
                 <p>As the project progressed, I introduced a design matrix to centralize design decisions and create a shared source of truth across teams. The matrix provided a clear, visual overview of how each dashboard tile supports user needs, personas, and permissions.</p>
-                <p>IThe matrix provides a visual representation of each tile’s supported personas, required states (default, empty, error), and core actions and tasks</p>
+                <p>The matrix provides a visual representation of each tile’s supported personas, required states (default, empty, error), and core actions and tasks</p>
               </div>
 
               <div className={styles.section}> 
@@ -215,11 +215,12 @@ const Akoya = () => {
           text={
             <div className={styles.content}>
               <div className={styles.section}> 
-                <FocusText text={'How might we highlight changes or events that actually require user attention or action?'}></FocusText>
+                
                 <Category category={'FUTURE EXPLORATIONS'}/>
                 
                 <ListItem text={'Conversations with engineers, product managers, and the design team helped clarify user needs.'}></ListItem>
                 <ListItem text={'This led to future explorations, with the broader question:'}></ListItem>
+                <FocusText text={'How might we highlight changes or events that actually require user attention or action?'}></FocusText>
               </div>
               
               <div className={styles.section}> 

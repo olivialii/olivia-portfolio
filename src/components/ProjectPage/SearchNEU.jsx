@@ -149,6 +149,7 @@ const SearchNEU = () => {
           subtext={'How might we design course cards to help students find and compare course info more efficiently?'}
         />
 
+      <div className={styles.content}> 
         <Imagetext
           image={'/assets/search/think.png'}
           text={
@@ -161,7 +162,9 @@ const SearchNEU = () => {
 
             </div>}
         ></Imagetext>
+        </div>
         <br/><br/>
+        
         <FullImage image={'assets/search/flow.png'}/>
       </div>
 
@@ -198,13 +201,13 @@ const SearchNEU = () => {
 
               <div className={styles.section}> 
               <ListItem
-                symbol={'→'}
+                symbol={'🔎'}
                 boldtext={'The NUPath requirements it fulfills,'}
                 text={'helping students quickly assess whether a course meets their needs.'}
               />
 
               <ListItem
-                symbol={'→'}
+                symbol={'🔎'}
                 boldtext={'Number of sections available,'}
                 text={' using color to indicate the percentage of sections full for quick comprehension.'}
               />
@@ -236,13 +239,13 @@ const SearchNEU = () => {
               
             
               <ListItem
-                symbol={'→'}
+                symbol={'🔎'}
                 boldtext={'Students typically search with specific criteria in mind.'}
                 text={'We found that students primarily use SearchNEU when they already know what they are looking for.'}
               />
 
               <ListItem
-                symbol={'→'}
+                symbol={'🔎'}
                 boldtext={'A fully expanded filter could cause confusion.'}
                 text={' Some students expressed that the fullscreen filter felt overwhelming and it was unclear if filters were being applied as they were selected.'}
               />
@@ -275,19 +278,19 @@ const SearchNEU = () => {
               
             
               <ListItem
-                symbol={'→'}
+                symbol={'🔎'}
                 boldtext={'Collapsible filter sections '}
                 text={'reduces visual clutter and keeps all filter options visible.'}
               />
 
               <ListItem
-                symbol={'→'}
+                symbol={'🔎'}
                 boldtext={'Partial visibility of the results page'}
                 text={' preserves context and reassure users that results remain unchanged until filters are applied.'}
               />
 
               <ListItem
-                symbol={'→'}
+                symbol={'🔎'}
                 boldtext={'Alignment with current design system'}
                 text={'makes it more coherent with the rest of the site.'}
               />
@@ -309,19 +312,19 @@ const SearchNEU = () => {
 
           <div class={styles.section}>
             <ListItem
-              symbol='1'
+              symbol='🔎'
               boldtext= 'Involving users in the design process: '
               text='Throughout the semester, we hosted project showcases, feedback sessions, tabling events, and informal conversations to help us understand what students needed. Interacting directly with users early and often ensures the product truly serves the community it was built for.'
             /> 
 
             <ListItem
-              symbol='2'
+              symbol='🔎'
               boldtext= 'Turning insights into action: '
               text='As a first-time Design Lead, I learned how to translate research into clear, actionable design goals for the team. Synthesizing student needs helped align everyone around why users behave the way they do, and how their frustrations could become opportunities.'
             />
 
             <ListItem
-              symbol='3'
+              symbol='🔎'
               boldtext= 'Documenting design decisions: '
               text='Well-documented design files helped me onboard quickly when I joined the project. Understanding not just what was designed, but why, as well as why some designs didnt make the cut, made collaboration smoother. I carried this practice forward, especially when handing designs off to developers or new designers.'
             />
