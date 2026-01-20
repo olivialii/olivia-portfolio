@@ -7,16 +7,17 @@ const AboutMe = () => {
     return (
     <FadeIn
     content={ <div className={styles.container}>
-            <img className={styles.me} src="/assets/me.jpg"></img>
+            <img className={styles.me} src="/assets/me2.png"></img>
 
             <div className={styles.text}>
                 <h2>Hey, I'm Olivia!</h2>
-                <br/><br/>
+                <br/>
                 <div>
-                    I’m a third year at Northeastern University studying Design and Computer Science.
+                I’m a junior at Northeastern University majoring in Design and Computer Science. I love working on projects that serve diverse communities. 
                     <br/><br/>
-                    I enjoy exploring how different tools and technologies can come together to create interactive experiences for different communities. By understanding users and experimenting with new ways to bring ideas to life, I want to be able to change the way people interact with the digital world. 
+                    Growing up in Brooklyn, NY, I learned early on the importance of community, creativity, and listening to different perspectives. Now, I carry those values into how I approach design: collaborating with users, experimenting with new ideas, collecting feedback, and creating digital experiences that make everyday life a little more enjoyable.
                     <br/><br/>
+                    Outside of UX/UI and product design, I’m picking up more analog hobbies. Current lineup: photography, sketching, and baking. Open to suggestions!
                 </div>
             </div>
         </div>}
