@@ -3,15 +3,14 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 32px;
 }
 
 .section {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
 }
-
 .block {
     padding-bottom: 60px;
 }

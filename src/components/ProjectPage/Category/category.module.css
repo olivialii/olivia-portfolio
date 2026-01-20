@@ -2,8 +2,8 @@
 
 
 .category {
-    font-size: 16px;
-    color: #18181a;   
+    font-size: 14px;
+    color: var(--color-accent);   
     font-weight: 500;
 }
 

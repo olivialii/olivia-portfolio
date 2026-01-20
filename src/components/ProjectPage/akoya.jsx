@@ -66,8 +66,10 @@ const Akoya = () => {
               <div className={styles.section}> 
               <Category category={'MY ROLE'}/>
               <p>As a UI Design Co-op, I primarily worked on two core products: The Data recipient hub, and the Admin console.</p>
-              <p>This case study examines the redesign of the Data Recipient Hub dashboard, specifically the app management tile. My goal was to enable greater flexibility and personalization beyond a one-size-fits-all model.</p>
               </div>
+             
+              <p>This case study examines the redesign of the Data Recipient Hub dashboard, specifically the app management tile. My goal was to enable greater flexibility and personalization beyond a one-size-fits-all model.</p>
+             
             </div>}
         ></Imagetext>
       </div>
@@ -86,8 +88,12 @@ const Akoya = () => {
           caption={'data recipient customer journey'}
           text={
             <div className={styles.content}>
-              <p> Designing an effective tool required a clear understanding of who was using the Data Recipient Hub and what they were trying to accomplish. What role does the Hub play within Akoya’s ecosystem? What goals do different users bring to the dashboard, and how do those goals shape their expectations during onboarding?</p>
-              <p>In my first few weeks, I focused on building foundational context around Akoya’s products and user flows. I reviewed internal documentation, design specs, and existing workflows, and asked frequent questions to better understand how data recipients interact with the platform and where friction commonly occurs.</p>
+              <div class={styles.section}>
+                <Category category={'FIRST STEPS'}></Category>
+                <FocusText text={'Designing an effective tool requires first a clear understanding of its users and what they want to accomplish.'}></FocusText>
+              </div>
+              <p> Who are data recipients? What is the Data Recipient Hub? What role does it play within Akoya’s ecosystem? Who are its users? What goals do different users have, and how do those goals shape their expectations when using Akoya’s products?</p>
+              <p>Within my first few days, I already had so many questions.  I needed to understand foundational context around Akoya’s tools and user base, so I reviewed documentation, workflows, and asked my team for a ton of explanations.</p>
             </div>}
         ></Imagetext>
       </div>
@@ -101,31 +107,37 @@ const Akoya = () => {
               
               <div className={styles.section}> 
                 <Category category={'AUDITING THE EXISTING DASHBOARD'}/>
-                <p>To ground this understanding in the current experience, I explored the existing developer portal hands-on.</p>
-                <p>As I navigated the dashboard, I documented my findings in a comprehensive audit table that captured: Supported personas Key tasks and actions tile states Gaps and opportunities for improvement</p>
-                <p>This table became a working artifact that helped me identify which tiles required deeper exploration. It also supported early ideation and brainstorming around which tiles to redesign and how they could better serve specific users.</p>
+                <p>Equipped with the knowledge of user roles and goals, I then needed to understand how they interact with the data recipient hub (previously called developer portal).  I utilized the testing environment to audit the existing dashboard.</p>
               </div>
-            </div>}
+
+              <p>I documented my findings in a table to track supported personas, key tasks/goals, tile states, and opportunities for improvement for each tile on the dashboard.</p>
+                <p>This table became a working artifact that helped me identify which tiles required deeper exploration. It also supported early ideation and brainstorming around which tiles to redesign and how they could better serve specific users.</p>
+                
+            '</div>}
+
+            
         ></Imagetext>
       </div>
 
       <div class={styles.block}> 
-        <div class={styles.section}> 
-          <Divider text={'Dashboard Designs Preview'}/>
+        <div class={styles.content}> 
           <FullImage 
             image={'assets/akoya/table.png'}
             caption={'Keeping track of each dashboard tile'}>
           </FullImage>
-          
+          <div/>
+      <div/>
+
+      <div class={styles.block}>
           <Imagetext
           image={'/assets/akoya/matrix.png'}
           caption={'Visual design matrix'}
           text={
             <div className={styles.content}>
-              <FocusText text={'Utilizing a design matrix helped me centralize design decisions + create a shared source of truth for how each tile supports user needs, personas, and permissions. '}/>
+              <FocusText text={'I created a design matrix to centralize design decisions and create a shared source of truth for everyone on the team.'}/>
               <div className={styles.section}> 
-                <p>As the project progressed, I introduced a design matrix to centralize design decisions and create a shared source of truth across teams. The matrix provided a clear, visual overview of how each dashboard tile supports user needs, personas, and permissions.</p>
-                <p>The matrix provides a visual representation of each tile’s supported personas, required states (default, empty, error), and core actions and tasks</p>
+                <p>Designing so many tiles at once could get disorganized fast. I introduced a design matrix to provide a clear, visual overview of all the different states and variations</p>
+                
               </div>
 
               <div className={styles.section}> 
@@ -135,6 +147,7 @@ const Akoya = () => {
             </div>}
         ></Imagetext>
         </div>
+      </div>
       </div>
 
       <div class={styles.block}> 
@@ -156,13 +169,14 @@ const Akoya = () => {
               <FocusText text={'The App Management tile is the primary entry point for creating, viewing, and managing sandbox and production apps.'}/>
               <div className={styles.section}> 
                 <Category category={'PROBLEMS'}/>
-                <ListItem text={'Assumes user has full permissions to register and manage apps.'}></ListItem>
-                <ListItem text={'Lacks empty states, assumes that apps already exist'}></ListItem>
-                <ListItem text={'Static call to action doesn’t adapt to user context and lacks guidance for first-time or limited-access users'}></ListItem>
+                <ListItem symbol={'1'} text={'Assumes user has full permissions to register and manage apps.'}></ListItem>
+                <ListItem symbol={'2'} text={'Lacks empty states, assumes that apps already exist'}></ListItem>
+                <ListItem symbol={'3'} text={'Static call to action doesn’t adapt to user context and lacks guidance for first-time or limited-access users'}></ListItem>
               </div>
 
               <div className={styles.section}> 
                 <Category category={'GOAL'}/>
+                <p>Create a fully functional, modular tile that could adapt to different users by selectively revealing, hiding, or disabling elements based on role, permissions, and progress in the onboarding flow.</p>
                 
               </div>
             </div>}
@@ -177,12 +191,12 @@ const Akoya = () => {
             <div className={styles.content}>
               
               <div className={styles.section}> 
-                <Category category={'ITERATION 1:  Establishing Core Functionality'}/>
+                <Category category={'ITERATION 1: ESTABLISHING CORE FUNCTIONALITY'}/>
                 <p>My first iteration focused on defining the tile’s foundational actions and layout:</p>
 
-                <ListItem text={'Prioritized two primary actions: registering an app and viewing existing apps'}></ListItem>
-                <ListItem text={'Displayed a lightweight table preview showing app name and ID'}></ListItem>
-                <ListItem text={'Introduced a filter dropdown to help users quickly locate apps'}></ListItem>
+                <ListItem symbol={'1'}  text={'Prioritized two primary actions: registering an app and viewing existing apps'}></ListItem>
+                <ListItem symbol={'2'}  text={'Displayed a lightweight table preview showing app name and ID'}></ListItem>
+                <ListItem symbol={'3'}  text={'Introduced a filter dropdown to help users quickly locate apps'}></ListItem>
                
                <p>How might we increase scalability and flexibility?</p>
               </div>
@@ -198,12 +212,14 @@ const Akoya = () => {
             <div className={styles.content}>
               
               <div className={styles.section}> 
-                <Category category={'ITERATION 2: Scaling up'}/>
+                <Category category={'ITERATION 2: SCALING UP'}/>
                 <p>Created a tile component after defining the general structure of the tile, making it flexible for future tiles that also require tables (e.g. the support tickets tile)</p>
+                </div>
+                
                 <p>⚠️ At this stage, I introduced a status column, assuming each app had a single status.</p>
                 
-                <ListItem text={'During a design review, collaboration with product and engineering revealed a critical insight: apps can have multiple statuses depending on which financial institutions they’re connected to. This made a single status column misleading and insufficient.'}></ListItem>
-              </div>
+                <ListItem  symbol={'1'} text={'During a design review, collaboration with product and engineering revealed a critical insight: apps can have multiple statuses depending on which financial institutions they’re connected to. This made a single status column misleading and insufficient.'}></ListItem>
+              
             </div>}
         ></Imagetext>
         </div>
@@ -215,22 +231,26 @@ const Akoya = () => {
           text={
             <div className={styles.content}>
               <div className={styles.section}> 
-                
+              <FocusText text={'How might we highlight changes or events that actually require user attention or action?'}></FocusText>
                 <Category category={'FUTURE EXPLORATIONS'}/>
-                
-                <ListItem text={'Conversations with engineers, product managers, and the design team helped clarify user needs.'}></ListItem>
-                <ListItem text={'This led to future explorations, with the broader question:'}></ListItem>
-                <FocusText text={'How might we highlight changes or events that actually require user attention or action?'}></FocusText>
-              </div>
+              </div> 
+              
+              <ListItem symbol={'1'} text={'Conversations with engineers, product managers, and the design team helped clarify user needs. This led to future explorations, with the broader question:'}></ListItem>
               
               <div className={styles.section}> 
                 <Category category={'EXPLORING USE CASES'}/>
                 <p>I explored scenarios where users would benefit from proactive signals, such as:</p>
-                <ListItem text={'Client secret resets'}></ListItem>
-                <ListItem text={'App configuration changes that require follow-up'}></ListItem>
-                <ListItem text={'Status changes tied to production access'}></ListItem>
+              <div/>
 
+              <div className={styles.section}> 
+                <ListItem symbol={'1'}text={'Client secret resets'}></ListItem>
+                <ListItem symbol={'2'} text={'App configuration changes that require follow-up'}></ListItem>
+                <ListItem symbol={'3'} text={'Status changes tied to production access'}></ListItem>
+              </div>
+
+              <div className={styles.section}> 
                 <p>Client secret resets, in particular, emerged as a critical event that users should be immediately aware of, reinforcing the need for the tile to surface contextually important information rather than static metadata.</p>
+              </div>
               </div>
             </div>}
         ></Imagetext>
@@ -244,7 +264,7 @@ const Akoya = () => {
             <div className={styles.content}>
               
               <div className={styles.section}> 
-                <Category category={'Defining the MVP'}/>
+                <Category category={'DEFINING THE MVP'}/>
                 <p>While future explorations surfaced many opportunities to make the App Management tile more adaptive and informative, not all ideas were feasible within the project’s scope and timeline. To move forward, we needed to clearly define what functionality was essential for an MVP, and what could be deferred.</p>
               </div>
             </div>}
