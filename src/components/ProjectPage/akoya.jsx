@@ -100,7 +100,7 @@ const Akoya = () => {
 
       <div class={styles.block}> 
       <Imagetext
-          image={'/assets/search/current.png'}
+          image={'/assets/akoya/current.png'}
           caption={'current dashboard'}
           text={
             <div className={styles.content}>
