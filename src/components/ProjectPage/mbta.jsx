@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import {setWhiteBackground, defaultBackground } from '../../utils';
 
 import styles from "./mbta.module.css";
@@ -30,7 +30,7 @@ const Mbta = () => {
       <Subheader
         subheader= 
         {
-        <div class={styles.ProjectTitle}>
+        <div className={styles.ProjectTitle}>
           <Link class={styles.link} to={"/Projects"}> Projects </Link> 
           <h2> MyCharlie </h2>
         </div>
@@ -51,24 +51,24 @@ const Mbta = () => {
       />
       
 
-      <div class={styles.block}> 
+      <div className={styles.block}> 
       <Subheader
         subheader= "Overview"
-        desc= {<div> This case study was completed as part of my Design Process + Practices course's "Project: Intervention – Interactive", where we learned how to use the design process to fully document and realize an interactive project. My task was to create an interactive tool that improves the experience on Boston's public transportation system. </div>}
+        desc= {<div> This case study was completed as part of my Design Process + Practices course, where we learned how to use the design process to fully document and realize an interactive project. My task was to create an interactive tool that improves the experience on Bostons public transportation system. </div>}
       />
       </div>
 
-      <div class={styles.block}> 
+      <div className={styles.block}> 
         <Divider text={'Prototype Preview'}/>
         
-        <div class={styles.phones}>
-        <img class={styles.image} src= {'/assets/mbta/1.gif'}></img>
-          <img class={styles.image} src= {'/assets/mbta/2.gif'}></img>
-          <img class={styles.image} src= {'/assets/mbta/3.gif'}></img>
+        <div className={styles.phones}>
+        <img className={styles.image} src= {'/assets/mbta/1.gif'}></img>
+          <img className={styles.image} src= {'/assets/mbta/2.gif'}></img>
+          <img className={styles.image} src= {'/assets/mbta/3.gif'}></img>
         </div>
       </div>
 
-      <div class={styles.block}> 
+      <div className={styles.block}> 
         <Divider 
         text={'Understanding Riders'}
         subtext={'What problems do riders experience?'}/>
@@ -76,7 +76,7 @@ const Mbta = () => {
         caption={'Affinity diagram with quotes from interviews'}/>
       </div>
 
-      <div class={styles.block}> 
+      <div className={styles.block}> 
       <Imagetext
           image={'/assets/mbta/users.png'}
           text={
@@ -98,7 +98,7 @@ const Mbta = () => {
         ></Imagetext>
       </div>
 
-      <div class={styles.block}> 
+      <div className={styles.block}> 
         <Divider 
         text={'Planning'}
         subtext={'Sitemap, low fidelity'}/>
@@ -107,13 +107,13 @@ const Mbta = () => {
         caption={'Sitemap'}/>
       </div>
 
-      <div class={styles.block}> 
+      <div className={styles.block}> 
       <FullImage 
         image={'/assets/mbta/lofi.png'}
         caption={'Low fidelity'}/>
       </div>
 
-      <div class={styles.block}> 
+      <div className={styles.block}> 
         <Divider 
         text={'Initial Iterations'}/>
         
@@ -142,7 +142,7 @@ const Mbta = () => {
       </div>
 
 
-      <div class={styles.block}> 
+      <div className={styles.block}> 
         <Divider 
         text={'Ideation (Round 2)'}/>
         
@@ -165,7 +165,7 @@ const Mbta = () => {
         ></Imagetext>
       </div>
 
-      <div class={styles.block}> 
+      <div className={styles.block}> 
         <Imagetext
           image={'/assets/mbta/solution.png'}
           text={
@@ -179,7 +179,7 @@ const Mbta = () => {
         ></Imagetext>
       </div>
 
-      <div class={styles.block}> 
+      <div className={styles.block}> 
         <Divider 
         text={'Final Designs'}/>
 
@@ -189,7 +189,7 @@ const Mbta = () => {
       </div>
 
 
-      <div class={styles.block}> 
+      <div className={styles.block}> 
         <Divider 
         text={'Reflection'}/>
 
@@ -197,9 +197,9 @@ const Mbta = () => {
           subheader={'Takeaways'}
           desc={
             <div className={styles.section}> 
-                <ListItem symbol={'1'} text={'Competitive Analysis. Many riders mentioned existing transit systems that they preferred. Taking a look at precedents that work well and ones that dont provides good inspiration'} />
-                <ListItem symbol={'2'} text={'Understanding user stories. The interviews. I conducted resulted in many different answers from people from different walks of life, that have different experiences with the T.  With affinity mapping, I was able to make that information more coherent '} />
-                <ListItem symbol={'3'} text={'Being flexible to evolving contexts: shifting project goals due to changes in current infrastructure. I wasn’t aware that tap to pay being implemented, which showed that more research was necessary'} />
+                <ListItem symbol={'1'} text={'Competitive Analysis. Many riders mentioned existing transit systems that they have experienced. Taking a look at precedents that work well and ones that dont provides good inspiration'} />
+                <ListItem symbol={'2'} text={'Understanding user stories. The interviews I conducted resulted in many different answers from people from different walks of life, that have different experiences with the T.  With affinity mapping, I was able to make that information more coherent '} />
+                <ListItem symbol={'3'} text={'Being flexible to evolving contexts: In this project, I had to shift project goals due to changes in current infrastructure. I wasn’t aware that tap to pay being implemented, which showed that more research was necessary'} />
               </div>
           }
         />
