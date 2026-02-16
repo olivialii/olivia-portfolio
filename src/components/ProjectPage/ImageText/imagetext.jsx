@@ -3,21 +3,26 @@ import styles from "./imagetext.module.css";
 import { FadeIn } from '../../FadeIn';
 
 
-const Imagetext = ({ image, text, caption }) => {
+const Imagetext = ({ header, image, text, caption }) => {
 
     return (
         <FadeIn
         content={
-            <div class={styles.content}>
 
-              <div class={styles.imgcontent}>
-                <img class={styles.image} src= {image}></img>
-                <p class={styles.caption}> {caption}</p>
+            <div className={styles.content}>
+               {header && <div className={styles.header}>{header} </div>}
+               
+            <div className={styles.imgtext}>
+
+              <div className={styles.imgcontent}>
+                <img className={styles.image} src= {image}></img>
+                <p className={styles.caption}> {caption}</p>
               </div>  
               
-              <div class={styles.textContainer}>
+              <div className={styles.textContainer}>
                 {text}
               </div>
+            </div>
             </div>
         }
         />

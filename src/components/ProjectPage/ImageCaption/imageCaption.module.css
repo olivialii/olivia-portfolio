@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.caption {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 120%;
+  letter-spacing: -0.16px;
+}
+

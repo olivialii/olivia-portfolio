@@ -1,9 +1,12 @@
 @import "../../../vars.css";
 
 
+
 .category {
+    padding-bottom: 8px;
     font-size: 14px;
-    color: var(--color-accent);   
+    color: var(--color-text-light);   
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
 }
 

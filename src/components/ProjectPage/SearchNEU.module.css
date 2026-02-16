@@ -1,18 +1,31 @@
 @import "../../vars.css";
 
 .content {
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 60px;
+    margin: auto;
 }
 
 .section {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 28px;
 }
+
 .block {
-    padding-bottom: 60px;
+    max-width: 1200px;
+    margin: auto;
+    border-top: 1px solid var(--Dividers-Dividers-1, rgba(0, 0, 0, 0.10));
+    padding: 40px 60px 80px 60px;
+
+}
+
+.header {
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--color-text);
 }
 
 @media (max-width: 700px) {
@@ -34,11 +47,13 @@ p {
 
 .gallery {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-    padding: 0 160px;
-    max-width: 1500px;
+    padding-top: 32px;
+
+    width: 100%;
+    
     margin: auto;
 }
 
@@ -50,6 +65,16 @@ p {
     border-radius: 4px;
 }
 
+.takeaways {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.takeaways > * {
+    flex: 1;
+}
+
 
 @media (max-width: 900px) {
     .photo-grid {
@@ -58,10 +83,19 @@ p {
   }
   
   
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     .photo-grid {
       grid-template-columns: 1fr;
     }
+
+
+    .takeaways {
+
+        flex-direction: column;
+
+    }
+
+  
   }
 
 .details {
@@ -69,12 +103,6 @@ p {
 }
 a {
     color: var(--color-accent);
-}
-
-.link {
-    font-size: 18px;
-    padding-right: 10px;
-    color: var(--color-text-light);
 }
 
 
@@ -195,4 +223,21 @@ li{
     padding-left: 20px;
     max-width: 100%;
     width: 60%; 
+}
+
+@media screen and (max-width: 650px) {
+
+    .content {
+        gap: 60px;
+    }
+
+    .block {
+        padding: 40px;
+
+    }
+
+    .section {
+        gap: 20px;
+    }
+
 }

@@ -1,10 +1,9 @@
 @import "../../../vars.css";
 
 .Section {
-
-    padding: 40px 80px ;
+    max-width: 1200px;
+    padding: 32px 60px ;
     margin: auto;
-    max-width: 1500px;
     
 }
 

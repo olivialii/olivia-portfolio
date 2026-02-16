@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource-variable/ibm-plex-sans": "^5.2.8",
     "@fontsource/outfit": "^5.1.1",
     "@fontsource/roboto": "^5.1.1",
     "@tailwindcss/vite": "^4.0.6",

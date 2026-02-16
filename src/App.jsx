@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import { Navbar } from "./components/Navbar/navbar";
-import { Intro } from "./components/Intro/intro";
 import { Footer } from "./components/Footer/footer"; 
 import Projects from './components/Projects/projects';
 import SearchNEU from './components/ProjectPage/SearchNEU';
