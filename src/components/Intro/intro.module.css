@@ -17,11 +17,10 @@
 }
 
 .content {
-    letter-spacing: .02em;
     color: var(--color-text);
 
     z-index: 100;
-    padding: 0 40px;
+    padding: 0 80px;
     text-align: left;
 
     max-width: 1200px;
@@ -72,7 +71,7 @@
 @media (max-width: 1000px) {
     .desc, .name {
         font-size: 28px;
-        line-height: 40px; 
+        line-height: 36px; 
     }
 
     .content {
@@ -95,13 +94,13 @@
     }
 
     .desc {
-      font-size: 24px;
-      line-height: 32px; 
+      font-size: 28px;
+      line-height: 38px;
       margin: 24px 0; 
     }
   
     .name {
-      font-size: 24px;
+      font-size: 28px;
     }
 
     .subdesc {

@@ -39,7 +39,7 @@ const Mbta = () => {
 
       <Details
         role="UI/UX Designer User Researcher"
-        duration="Feb. - Mar. 2024"
+        duration={'Feb. - Mar. 2024 (1 month)'}
         team= "Solo Project"
         tools= "Riders of the Boston Public Transit System"></Details>
 

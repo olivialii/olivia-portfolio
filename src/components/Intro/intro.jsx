@@ -18,9 +18,6 @@ export const Intro = () => {
                 design co-op.
                 </p>
 
-                <p className={styles.subdesc}>
-                I also enjoy gaming, baking, and digital art!
-                </p>
 
             </div>
 

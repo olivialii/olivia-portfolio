@@ -38,7 +38,7 @@ const SearchNEU = () => {
       
       <Details
         role="Design Lead"
-        duration="September 2024 - Present"
+        duration="Sept. - Dec. 2024 (4 months)"
         team= {<div className={styles.details}>Designers: Serena Ng, Nitish Gannu
           <br/> Developers: Ananya Patil, Michael Mehall, Carter Herman, Eric Sun, Wesley Tran, Nick Pfeiffer
         </div>}

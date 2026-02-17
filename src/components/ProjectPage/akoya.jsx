@@ -11,6 +11,7 @@ import Category from './Category/category';
 import Divider from './Divider/divider';
 import FullImage from './FullImage/fullImage';
 import ListItem from './ListItem/listItem';
+import BlockIntro from './BlockIntro/blockintro';
 
 import Gate from '../Gate/gate';
 
@@ -24,7 +25,7 @@ const Akoya = () => {
       <Subheader
         subheader= 
         {
-        <div class={styles.ProjectTitle}>
+        <div className={styles.ProjectTitle}>
          
           <h2> Akoya </h2>
         </div>
@@ -41,114 +42,82 @@ const Akoya = () => {
         duration="Jul. - Dec. 2025"
         team= {
           <div>Principal Product Designer: David Chung <br/>
-            Senior Product Designer: Rhttp://localhost:5174/Akoyayan Magalhaes <br/>
+            Senior Product Designer: Ryan Magalhaes <br/>
             UX Designer: Ajay Chaudry <br/>
           </div>
         }
         tools= "Financial institutions and fintechs"></Details>
       
-
-
       
-      
-      <div class={styles.block}> 
+      <div className={styles.block}> 
+      <div className={styles.content}>
       <Imagetext
           image={'/assets/akoya/about.png'}
           text={
-            <div className={styles.content}>
+  
               
               <div className={styles.section}> 
-                <Category category={'ABOUT AKOYA'}/>
+                <div>
+                <Category category={'CONTEXT'}/>
                 <FocusText text={'Akoya is a financial data-access network that enables fintechs and financial institutions to securely share consumer-permissioned data through APIs.'}></FocusText>
-                
+                </div>
+       
+              <div>
+                <Category category={'MY ROLE'}/>
+                <p>This case study examines the redesign of the Data Recipient Hub dashboard. My goal was improve onboarding experiences for all user roles by enabling greater flexibility and personalization beyond a one-size-fits-all model.</p>
               </div>
+            </div>
+            }
+        ></Imagetext>
 
-              <div className={styles.section}> 
-              <Category category={'MY ROLE'}/>
-              <p>As a UI Design Co-op, I primarily worked on two core products: The Data recipient hub, and the Admin console.</p>
-              </div>
+        <FullImage 
+          header={'Dashboard Designs Preview'}
+          image={'assets/akoya/preview.png'}>
+        </FullImage>
+
+      </div>
+      </div>
+
+      <div className={styles.block}>
+        <div className={styles.content}>
+        <BlockIntro
+          number={'01'}
+          title={'Understanding the context behind Akoya’s tools and user base'}
+          rightside={
+            <div className={styles.section}>
+              <FocusText text={'Before diving into design solutions, I needed to understand the foundational context around Akoya’s tools and user base.'}/>
              
-              <p>This case study examines the redesign of the Data Recipient Hub dashboard, specifically the app management tile. My goal was to enable greater flexibility and personalization beyond a one-size-fits-all model.</p>
-             
-            </div>}
-        ></Imagetext>
-      </div>
-
-      <div class={styles.block}> 
-        <Divider text={'Dashboard Designs Preview'}/>
-        <FullImage image={'assets/akoya/preview.png'}></FullImage>
-      </div>
-
-      <div class={styles.block}> 
-        <Divider 
-        text={'Data Recipient Hub'}
-        subtext={'Understanding context'}/>
-         <Imagetext
-          image={'/assets/akoya/journey.png'}
-          caption={'data recipient customer journey'}
-          text={
-            <div className={styles.content}>
-              <div class={styles.section}>
-                <Category category={'FIRST STEPS'}></Category>
-                <FocusText text={'Designing an effective tool requires first a clear understanding of its users and what they want to accomplish.'}></FocusText>
-              </div>
-              <p> Who are data recipients? What is the Data Recipient Hub? What role does it play within Akoya’s ecosystem? Who are its users? What goals do different users have, and how do those goals shape their expectations when using Akoya’s products?</p>
-              <p>Within my first few days, I already had so many questions.  I needed to understand foundational context around Akoya’s tools and user base, so I reviewed documentation, workflows, and asked my team for a ton of explanations.</p>
-            </div>}
-        ></Imagetext>
-      </div>
-
-      <div class={styles.block}> 
-      <Imagetext
-          image={'/assets/akoya/current.png'}
-          caption={'current dashboard'}
-          text={
-            <div className={styles.content}>
-              
-              <div className={styles.section}> 
-                <Category category={'AUDITING THE EXISTING DASHBOARD'}/>
-                <p>Equipped with the knowledge of user roles and goals, I then needed to understand how they interact with the data recipient hub (previously called developer portal).  I utilized the testing environment to audit the existing dashboard.</p>
-              </div>
-
-              <p>I documented my findings in a table to track supported personas, key tasks/goals, tile states, and opportunities for improvement for each tile on the dashboard.</p>
-                <p>This table became a working artifact that helped me identify which tiles required deeper exploration. It also supported early ideation and brainstorming around which tiles to redesign and how they could better serve specific users.</p>
-                
-            '</div>}
-
-            
-        ></Imagetext>
-      </div>
-
-      <div class={styles.block}> 
-        <div class={styles.content}> 
-          <FullImage 
-            image={'assets/akoya/table.png'}
-            caption={'Keeping track of each dashboard tile'}>
-          </FullImage>
-          <div/>
-      <div/>
-
-      <div class={styles.block}>
-          <Imagetext
-          image={'/assets/akoya/matrix.png'}
-          caption={'Visual design matrix'}
-          text={
-            <div className={styles.content}>
-              <FocusText text={'I created a design matrix to centralize design decisions and create a shared source of truth for everyone on the team.'}/>
-              <div className={styles.section}> 
-                <p>Designing so many tiles at once could get disorganized fast. I introduced a design matrix to provide a clear, visual overview of all the different states and variations</p>
-                
-              </div>
-
-              <div className={styles.section}> 
-                <Category category={'IMPACT'}/>
-                <p>Maintaining this matrix throughout the project improved alignment across design, product, and engineering as the dashboard evolved. Developers used it as a reference point during implementation, which made feedback more actionable and surfaced gaps early, especially when something was missing or didn’t quite make sense.</p>
-              </div>
-            </div>}
-        ></Imagetext>
-        </div>
+              <p>Throughout my co-op, I constantly reviewed documentation, existing workflows, and user journeys to inform my design decisions.</p>
+              <FullImage 
+                image={'assets/akoya/journey.png'} 
+                caption={'data recipient customer journey'}></FullImage>
+              <FullImage 
+                image={'assets/akoya/current.png'} 
+                caption={'Exploring existing tools via testing environments'}></FullImage>
+            </div>
+            }
+        />
       </div>
       </div>
+
+      <div className={styles.block}>
+        <div className={styles.content}>
+        <BlockIntro
+          number={'02'}
+          title={'Setting up design documentation + understanding motivations'}
+          rightside={ 
+            <div></div>
+            }
+        />
+
+        <FullImage 
+         header={'Dashboard tile table '}
+          image={'assets/akoya/table.png'} 
+          caption={'data recipient customer journey'}>
+        </FullImage>
+      </div>
+      </div>
+
 
       <div class={styles.block}> 
         <Divider text={'Existing Precedents'}/>
