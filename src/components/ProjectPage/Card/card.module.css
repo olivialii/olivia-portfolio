@@ -55,9 +55,8 @@
 }
 
 .number {
-    font-size: 14px;
+  font-size: 14px;
   font-weight: 500;
-  font-family: 'IBM Plex Mono', monospace;
   color: var(--color-accent);
 }
 

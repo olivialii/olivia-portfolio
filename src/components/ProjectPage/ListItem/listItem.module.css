@@ -7,9 +7,9 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 20px;  
+    gap: 12px;  
 
-    color: var(--color-accent);
+
     padding-bottom: 12px;
 }
 

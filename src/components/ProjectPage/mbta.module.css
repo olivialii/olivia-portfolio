@@ -1,31 +1,25 @@
 @import "../../vars.css";
 
-
 .content {
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 60px;
+    margin: auto;
 }
 
 .section {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 28px;
 }
 
 .block {
-    padding-bottom: 60px;
-}
+    max-width: 1200px;
+    margin: auto;
+    border-top: 1px solid var(--Dividers-Dividers-1, rgba(0, 0, 0, 0.10));
+    padding: 40px 60px 80px 60px;
 
-@media (max-width: 700px) {
-    .block {
-        padding-bottom: 20px;
-    }
-
-    .content {
-        gap: 28px;
-        padding-bottom: 20px;
-    } 
 }
 
 
@@ -66,16 +60,20 @@ a {
 
 .phones {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    gap: 24px;              
+    justify-content: center;
+    margin: 0 auto;
+    gap: 16px;
+    max-width: 900px;
+    width: 100%;
 }
 
 .phones img {
-    width: 25vw;
-    max-width: 300px;
-    min-width: 175px;
-    object-fit: scale-down;
+    width: 24vw;
+    max-height: 550px;
+    min-width: 50px;
+    object-fit:scale-down;
 
 }
 
@@ -92,4 +90,19 @@ a {
     justify-content: center;
 }
 
+@media screen and (max-width: 650px) {
 
+    .content {
+        gap: 60px;
+    }
+
+    .block {
+        padding: 40px;
+
+    }
+
+    .section {
+        gap: 20px;
+    }
+
+}

@@ -4,7 +4,6 @@ import styles from "./akoya.module.css";
 import Details from './Details/details';
 import Subheader from "./Subheader/subheader";
 import Banner from './Banner/banner';
-import { Link } from 'react-router-dom';
 
 import Imagetext from './ImageText/imagetext';
 import FocusText from './FocusText/focusText';
@@ -26,29 +25,30 @@ const Akoya = () => {
         subheader= 
         {
         <div class={styles.ProjectTitle}>
-          <Link class={styles.link} to={"/Projects"}> Projects </Link> 
+         
           <h2> Akoya </h2>
         </div>
         }
         desc= {<div>Redesigning Akoya’s Data Recipient Hub dashboard to enable greater flexibility and personalization beyond a one-size-fits-all model: This case study focuses on the design of the app management tile.</div>}>
       </Subheader>
             
+      <Banner 
+        banner='/assets/akoya/banner.png'
+      />
 
       <Details
         role="UI/UX Design Co-op"
         duration="Jul. - Dec. 2025"
         team= {
           <div>Principal Product Designer: David Chung <br/>
-            Senior Product Designer: Ryan Magalhaes <br/>
+            Senior Product Designer: Rhttp://localhost:5174/Akoyayan Magalhaes <br/>
             UX Designer: Ajay Chaudry <br/>
           </div>
         }
         tools= "Financial institutions and fintechs"></Details>
       
 
-      <Banner 
-        banner='/assets/akoya/banner.png'
-      />
+
       
       
       <div class={styles.block}> 

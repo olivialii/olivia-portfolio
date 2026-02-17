@@ -60,9 +60,18 @@
 }
 
 @media (max-width: 700px) {
+    .content {
+        flex-direction: column;
+
+    }
+
+    .number {
+        font-size: 28px;
+    }
 
     .title {
         width: auto;
+        font-size: 28px;
     }
 
     .textContainer {

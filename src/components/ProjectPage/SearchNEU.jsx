@@ -8,7 +8,6 @@ import Details from "./Details/details"
 import Imagetext from './ImageText/imagetext';
 import FocusText from './FocusText/focusText';
 import Category from './Category/category';
-import Divider from './Divider/divider';
 import FullImage from './FullImage/fullImage';
 import ListItem from './ListItem/listItem';
 import BlockIntro from './BlockIntro/blockintro';
